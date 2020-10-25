@@ -6,7 +6,7 @@ External attackers are typically looking for listening services. The list below 
 
 This is the default insecure Docker port. It's an HTTP REST API, and usually access results in root on the host.
 
-**Testing with docker CLI**
+### Testing with docker CLI
 
 The easiest way to attack this is just use the docker CLI.
 
@@ -24,6 +24,22 @@ This is the default port for the Docker daemon where it requires credentials (cl
 
 Typical ports for the Kubernetes API server.
 
+### Testing for access
+
+Access to the `/version` endpoint will often work without valid credentials (using curl), as this is made available to unauthenticated users.
+
+* `kubectl --insecure-skip-tls-verify --username=system:unauthenticated -shttps://[IP]:[PORT] version` - Test for access with kubectl
+* `curl -k https://[IP]:[PORT]/version` - Test for access with curl
+
+### Checking permissions
+
+It's possible that unauthenticated users have been provided more access. You can check what permissions you have with
+
+* `kubectl --insecure-skip-tls-verify --username=system:unauthenticated -shttps://[IP]:[PORT] auth can-i --list`
+
+### Getting privileged access to cluster nodes
+
+In the event that you have create pods access without authentication, see [attacker manifests](attacker_manifests.md) for useful approaches.
 
 ## 2379/TCP - etcd
 
