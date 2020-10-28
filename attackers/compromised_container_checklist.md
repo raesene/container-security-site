@@ -21,11 +21,7 @@ A list of things you can try if you're doing a CTF/Pentest/Bug bounty and find y
 
 ### Tooling
 
-The easy way to assess this is tooling. All of these come as static golang binaries, so if you can wget/curl files from github you can install them
-
-- [amicontained](https://github.com/genuinetools/amicontained) will show you information about the container runtime and rights you have.
-- [conmachi](https://github.com/nccgroup/ConMachi) similar information to amicontained not currently (Oct 2020) maintained.
-- [botb](https://github.com/brompwnie/botb) Good tool to both assess your position and try and breakout.
+[tools list here](tools_list.md)
 
 ### Manual breakout - privileged containers
 
