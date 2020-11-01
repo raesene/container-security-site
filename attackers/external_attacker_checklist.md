@@ -43,6 +43,10 @@ In the event that you have create pods access without authentication, see [attac
 
 ## 2379/TCP - etcd
 
+## 5000/TCP - Docker Registry
+
+Generally the goal of attacking a Docker registry is not to compromise the service itself, but to gain access to either read sensitive information stored in container images and/or modify stored container images.
+
 ## 10250/TCP - kubelet
 
 ## 10255/TCP - kubelet read-only

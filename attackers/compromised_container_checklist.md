@@ -11,6 +11,10 @@ A list of things you can try if you're doing a CTF/Pentest/Bug bounty and find y
 - `ip addr` - Again not definitive, but `172.17.0.0/16` is the default docker network, so if all you have is network stats, this is useful
 - `ping host.docker.internal` - should respond if you're in a docker container
 
+### Tools for checking
+
+- Run [amicontained](https://github.com/genuinetools/amicontained)
+
 ## Breaking out
 
 ### High level areas
@@ -50,3 +54,12 @@ Another approach for privileged containers is just to mount the underlying root 
 If the tooling suggests that the Docker socket is available at `/var/run/docker.sock` then you can just get the docker CLI tool and run any docker command. To breakout use :-
 
 * `docker run -ti --privileged --net=host --pid=host --ipc=host --volume /:/host busybox chroot /host` - From [this](https://zwischenzugs.com/2015/06/24/the-most-pointless-docker-command-ever/) post. This will drop you into a root shell on the host.
+
+## Other Avenues of attack
+
+Avenues of attack that aren't directly related to breaking out of the container
+
+### keyctl-unmask
+
+As described in [this post](https://www.antitree.com/2020/07/keyctl-unmask-going-florida-on-the-state-of-containerizing-linux-keyrings/) it may be possible to get keys from the kernel keyring on a Docker host, and use those for breakouts or other access to the host or related machines.
+

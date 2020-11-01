@@ -26,3 +26,16 @@ Useful tools to run inside a container to assess the sandbox that's in use.
 ### Kubernetes Penetration Testing Tool
 
 * [kube-hunter](https://github.com/aquasecurity/kube-hunter) - Tool to test and exploit standard Kubernetes Security Vulnerabilities.
+
+### Kubelet Tooling
+
+* [kubeletctl](https://github.com/cyberark/kubeletctl) - This is a good tool to automate the process of assessing a kubelet instance. If the instance is vulnerable it can also carry out some exploit tasks.
+
+### etcd Tooling
+
+* [auger](https://github.com/jpbetz/auger) - tool for decoding information pulled directly from the etcd database.
+
+### Container Registry Tooling
+
+* [reg](https://github.com/genuinetools/reg) - Tool for interacting with Container registries
+* [go-pillage-registries](https://github.com/nccgroup/go-pillage-registries) - Tool to search the manifests and configuration for images in a registry for potentially sensitive information.
