@@ -43,6 +43,26 @@ In the event that you have create pods access without authentication, see [attac
 
 ## 2379/TCP - etcd
 
+The authentication model used by etcd, when supporting a Kubernetes cluster, is relatively straightforward. It uses client certificate authentication where **any** certificate issued by it's trusted CA will provide full access to all data. In terms of attacks, there are two options unauthenticated access and authenticated acces.
+
+### Unauthenticated Access
+
+A good general test for this is to use curl to access the `/version` endpoint. Although most endpoints don't respond well to curl in etcdv3, this one will and it'll tell you whether unauthenticated access is possible or not.
+
+```bash
+curl [IP]:2379/version
+```
+
+If that returns version information, it's likely you can get unauthenticated access to the database. A good first step is to drop all the keys in the database, using etcdctl. First you need to set this environment variable so that etcdctl knows it's talking to a v3 server.
+
+```bash
+export ETCDCTL_API=3
+```
+
+
+
+
+
 ## 5000/TCP - Docker Registry
 
 Generally the goal of attacking a Docker registry is not to compromise the service itself, but to gain access to either read sensitive information stored in container images and/or modify stored container images.

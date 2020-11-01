@@ -5,11 +5,11 @@
 Useful tools to run inside a container to assess the sandbox that's in use.
 
 * [amicontained](https://github.com/genuinetools/amicontained) -  will show you information about the container runtime and rights you have.
-* [ConMachi](https://github.com/nccgroup/ConMachi/)
+* [ConMachi](https://github.com/nccgroup/ConMachi/) - Pentester focused container attack surface assessment tool.
 
 ## Container Breakout Tools
 
-* [botb](https://github.com/brompwnie/botb)
+* [botb](https://github.com/brompwnie/botb) - Container breakout assessment tool. Can automatically exploit common issues like the Docker socket mount.
 
 ## Container Orchestration Tools
 
