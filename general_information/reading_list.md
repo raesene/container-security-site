@@ -5,15 +5,17 @@ This is a list of more in-depth articles than can be worth reading to get a bett
 # Container History
 
 - [Brief Container History](https://blog.aquasec.com/a-brief-history-of-containers-from-1970s-chroot-to-docker-2016)
-- Series of posts on the history of container engines leading up to Docker
-  - [part 1](http://www.cybera.ca/news-and-events/tech-radar/contain-your-enthusiasm-part-one-a-history-of-operating-system-containers/)
-  - [part 2](http://www.cybera.ca/news-and-events/tech-radar/contain-your-enthusiasm-part-two-jails-zones-openvz-and-lxc/)
-  - [part 3](http://www.cybera.ca/news-and-events/tech-radar/contain-your-enthusiasm-part-three-docker/ )
+- Series of posts from 2013 on the history of container engines leading up to Docker
+  - [part one](https://web.archive.org/web/20191011153644/http://www.cybera.ca/news-and-events/tech-radar/contain-your-enthusiasm-part-one-a-history-of-operating-system-containers/)
+  - [part two](https://web.archive.org/web/20191011151348/https://www.cybera.ca/news-and-events/tech-radar/contain-your-enthusiasm-part-two-jails-zones-openvz-and-lxc/)
+  - [part three](https://web.archive.org/web/20191011153243/http://www.cybera.ca/news-and-events/tech-radar/contain-your-enthusiasm-part-three-docker/ )
 
 # Docker Networking
 
 - [Post on Linux Bridging](https://www.thegeekstuff.com/2017/06/brctl-bridge/)
-- [Posts on Docker MACVLAN](https://web.archive.org/web/20190217173244/https://hicu.be/docker-networking-macvlan-vlan-configuration) [second part](https://web.archive.org/web/20190130130707/hicu.be/bridge-vs-macvlan)
+- Posts on Docker MACVLAN
+  - [part one](https://web.archive.org/web/20190217173244/https://hicu.be/docker-networking-macvlan-vlan-configuration) 
+  - [part two](https://web.archive.org/web/20190130130707/hicu.be/bridge-vs-macvlan)
 
 # Container Storage and Volumes
 
@@ -73,12 +75,7 @@ This is a list of more in-depth articles than can be worth reading to get a bett
 
 # Kubernetes Networking
 
-- Good series of posts on Kubernetes networking fundamentals
-  - [part one](https://medium.com/google-cloud/understanding-kubernetes-networking-pods-7117dd2872)
-  - [part two](https://medium.com/google-cloud/understanding-kubernetes-networking-services-f0cb48e4cc82)
-  - [part three](https://medium.com/google-cloud/understanding-kubernetes-networking-ingress-1bc341c84078)
-
-- Another good set of posts on Container networking setup
+- Good set of posts on Container networking setup
   - [part one](https://itnext.io/an-illustrated-guide-to-kubernetes-networking-part-1-d1ede3322727)
   - [part two](https://itnext.io/an-illustrated-guide-to-kubernetes-networking-part-2-13fdc6c4e24c)
 
@@ -94,4 +91,5 @@ This is a list of more in-depth articles than can be worth reading to get a bett
 # Books 
 
 - [Free Kubernetes Security book from Aqua](https://info.aquasec.com/kubernetes-security)
+- [Free Kubernetes Up and Running from VMWare](https://k8s.vmware.com/kubernetes-up-and-running/)
 - [Docker in Practice](https://www.manning.com/books/docker-in-practice-second-edition)
