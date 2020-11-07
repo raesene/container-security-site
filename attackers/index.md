@@ -1,5 +1,7 @@
 # Information for Attackers
 
+The goal of this section of the site is to provide useful information for pentesters and red teamers, who are looking at containerised environments as part of their reviews. 
+
 ## Breakout Checklists
 
 - [External Attacker](external_attacker_checklist.md)

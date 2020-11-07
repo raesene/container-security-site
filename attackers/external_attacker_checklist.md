@@ -71,11 +71,18 @@ Then this command will enumerate all the keys in  the database
 etcdctl --insecure-skip-tls-verify --insecure-transport=false --endpoints=https://[IP]:2379 get / --prefix --keys-only
 ```
 
+with a list of keys to hand the next step is generally to find useful information, for further attacks.
+
 ---
 
 ## 5000/TCP - Docker Registry
 
 Generally the goal of attacking a Docker registry is not to compromise the service itself, but to gain access to either read sensitive information stored in container images and/or modify stored container images.
+
+### Enumerating repositories/images
+
+Whilst you can do this with just curl, it's probably more efficient to use some of the [registry interaction tools](tools_list.md#container-registry-tooling). For example  `go-pillage-reg` will dump a list of the repositories in a a registry as well as the details of all the manifests of those images.
+
 
 ---
 
