@@ -1,15 +1,14 @@
 # Tools for Attackers
 
-## Container Attack Surface Assessment
+## Container Attack Surface Assessment & Breakout
 
-Useful tools to run inside a container to assess the sandbox that's in use.
+Useful tools to run inside a container to assess the sandbox that's in use, and exploit some common breakout issues.
 
 * [amicontained](https://github.com/genuinetools/amicontained) -  will show you information about the container runtime and rights you have.
 * [ConMachi](https://github.com/nccgroup/ConMachi/) - Pentester focused container attack surface assessment tool.
-
-## Container Breakout Tools
-
+* [deepce](https://github.com/stealthcopter/deepce) - Docker Enumeration, Escalation of Privileges and Container Escapes 
 * [botb](https://github.com/brompwnie/botb) - Container breakout assessment tool. Can automatically exploit common issues like the Docker socket mount.
+* [keyctl-unmask](https://github.com/antitree/keyctl-unmask) - Tool that specifically focuses on grabbing kernel keyring entries from containers that allow the keyctl syscall
 
 ## Container Orchestration Tools
 
@@ -26,6 +25,8 @@ Useful tools to run inside a container to assess the sandbox that's in use.
 ### Kubernetes Penetration Testing Tool
 
 * [kube-hunter](https://github.com/aquasecurity/kube-hunter) - Tool to test and exploit standard Kubernetes Security Vulnerabilities.
+* [kubestrike](https://github.com/vchinnipilli/kubestrike) - Security auditing tool for Kubernetes looks at Authenticated and unauthenticated scanning.
+* [peirates](https://github.com/inguardians/peirates) - Kubernetes container breakout tool
 
 ### Kubelet Tooling
 
@@ -33,7 +34,7 @@ Useful tools to run inside a container to assess the sandbox that's in use.
 
 ### etcd Tooling
 
-* [auger](https://github.com/jpbetz/auger) - tool for decoding information pulled directly from the etcd database.
+* [auger](https://github.com/jpbetz/auger) - Tool for decoding information pulled directly from the etcd database.
 
 ### Container Registry Tooling
 
