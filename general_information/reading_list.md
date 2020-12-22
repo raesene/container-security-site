@@ -90,6 +90,7 @@ This is a list of more in-depth articles than can be worth reading to get a bett
 
 # Books 
 
+- [Free Container Security book from Aqua](https://info.aquasec.com/container-security-book)
 - [Free Kubernetes Security book from Aqua](https://info.aquasec.com/kubernetes-security)
 - [Free Kubernetes Up and Running from VMWare](https://k8s.vmware.com/kubernetes-up-and-running/)
 - [Docker in Practice](https://www.manning.com/books/docker-in-practice-second-edition)
