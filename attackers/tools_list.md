@@ -41,3 +41,11 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [reg](https://github.com/genuinetools/reg) - Tool for interacting with Container registries
 * [regclient](https://github.com/regclient/regclient) - Another tool for interacting with container registries
 * [go-pillage-registries](https://github.com/nccgroup/go-pillage-registries) - Tool to search the manifests and configuration for images in a registry for potentially sensitive information.
+
+### Training Tools
+
+If you're looking to practice with some of the tools here, in a safe environment, there are projects to help with that.
+
+- [Kube Security Lab](https://github.com/raesene/kube_security_lab) - Basic set of Kubernetes security scenarios implemented in Ansible with Kind.
+- [Kubernetes Simulator](https://github.com/kubernetes-simulator/simulator) - AWS based Kubernetes cluster environment with different vulnerability scenarios.
+- [Kubernetes Goat](https://github.com/madhuakula/kubernetes-goat) - Focuses on vulnerable deployments on top of an existing cluster. Also available on line [with Katacoda](https://katacoda.com/madhuakula/scenarios/kubernetes-goat)
