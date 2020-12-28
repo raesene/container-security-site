@@ -25,6 +25,8 @@ This is a list of more in-depth articles than can be worth reading to get a bett
 
 # Container Fundamentals
 
+- [Understanding and Hardening Linux Containers](https://research.nccgroup.com/wp-content/uploads/2020/07/ncc_group_understanding_hardening_linux_containers-1-1.pdf) - Whitepaper that goes into detail about container fundamental security.
+
 - Series of posts from Ian Lewis on Container runtimes
   - [part one](https://www.ianlewis.org/en/container-runtimes-part-1-introduction-container-r)
   - [part two](https://www.ianlewis.org/en/container-runtimes-part-2-anatomy-low-level-contai)
@@ -55,7 +57,7 @@ This is a list of more in-depth articles than can be worth reading to get a bett
 - [Post which isn't just on capabilities.  It goes into the idea of building your own containers, and as part of that, covers capabilities](https://blog.lizzie.io/linux-containers-in-500-loc.html)
 - [Post about LXC and capabilities](https://blog.iwakd.de/lxc-cap_sys_admin-jessie)
 - [Post detailing how Docker uses cgroups](https://shekhargulati.com/2019/01/03/how-docker-uses-cgroups-to-set-resource-limits/)
-
+- [Abusing Privileged and Unprivileged Linux Containers](https://www.nccgroup.com/globalassets/our-research/us/whitepapers/2016/june/abusing-privileged-and-unprivileged-linux-containers.pdf) whitepaper on container breakout techniques, including focus on NET_RAW.
 
 # Docker Security
 
