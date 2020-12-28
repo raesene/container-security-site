@@ -22,6 +22,7 @@ In a managed cluster, the above procedure won't work, as you don't have shell ac
 
 
 ### Create Pod (and exec into container)
+**You can try out this attack using Kube Security Lab, using the ssh-to-create-pods-multi-node playbook [here](https://github.com/raesene/kube_security_lab)**
 
 The approach here is relatively similar to the daemonset, except that you'll need to target your pod at a control plane node and ensure you tolerate the `NoSchedule` taint that's likely to be set there. 
 
