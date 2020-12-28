@@ -32,6 +32,9 @@ metadata:
   name: noderootpod
   labels:
 spec:
+  tolerations:
+  - key: node-role.kubernetes.io/master
+    effect: NoSchedule
   hostNetwork: true
   hostPID: true
   hostIPC: true
