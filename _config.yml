@@ -1,3 +1,5 @@
 theme: jekyll-theme-hacker
+plugins:
+  - jekyll-feed
 title: [container-security site]
 description: [A site about container security]
