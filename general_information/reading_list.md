@@ -68,6 +68,9 @@ This is a list of more in-depth articles than can be worth reading to get a bett
 
 - [Docker Swarm Certificate management](https://docs.docker.com/engine/swarm/how-swarm-mode-works/pki/)
 
+# runc
+
+- [Post on how to use runc directly](https://danishpraka.sh/2020/07/24/introduction-to-runc.html)
 
 # Kubernetes - General
 
@@ -82,6 +85,9 @@ This is a list of more in-depth articles than can be worth reading to get a bett
   - [part two](https://itnext.io/an-illustrated-guide-to-kubernetes-networking-part-2-13fdc6c4e24c)
 
 - [Post on implementing your own CNI plugin in Bash](https://www.altoros.com/blog/kubernetes-networking-writing-your-own-simple-cni-plug-in-with-bash/)
+
+- [Post on how to implement a replacement for kube-proxy](https://arthurchiao.art/blog/cracking-k8s-node-proxy/)
+- [Post on how Kubernetes service traffic direction is done](https://dustinspecker.com/posts/iptables-how-kubernetes-services-direct-traffic-to-pods/)
 
 # Kubernetes Security
 
