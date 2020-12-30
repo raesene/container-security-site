@@ -116,6 +116,9 @@ metadata:
   labels:
     app: keydumper
 spec:
+  tolerations:
+  - key: node-role.kubernetes.io/master
+    effect: NoSchedule
   containers:
   - name: keydumper-pod
     image: busybox
@@ -146,6 +149,9 @@ kind: Pod
 metadata:
   name: ncat-reverse-shell-pod
 spec:
+  tolerations:
+  - key: node-role.kubernetes.io/master
+    effect: NoSchedule
   containers:
   - name: ncat-reverse-shell
     image: raesene/ncat

