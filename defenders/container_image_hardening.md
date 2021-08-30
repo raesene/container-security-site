@@ -1,4 +1,4 @@
-# Container Image Hardening
+# Defenders - Container Image Hardening
 
 Improving the security of container images, generally focuses on removing unecessary software to reduce the attack surface. In addition to this, avoiding risky software installation practices is a good idea if you're building production container images and for all images, avoiding using the root user will be important.
 
@@ -13,3 +13,5 @@ This is essentially an almost empty base image with no package management or oth
 Things like statically compiled Golang or ASP.Net Core applications can often work in a scratch containers, where others which use a lot of supporting libraries, are unlikely to have an easy time using this approach.
 
 ### Google Distroless
+
+**TBD**
