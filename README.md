@@ -5,7 +5,8 @@ This is a site with some container security resources. It is (and probably alway
 ## General Information
 
 - [Container Reading List](general_information/reading_list.md)
-- [Jargon Busters](jargon_busters/index.md)
+- [Container Terms for Security people](jargon_busters/container_terms_for_security_people.md)
+- [Security Terms for security people](jargon_busters/security_terms_for_container_people.md)
 - [Container CVE List](general_information/container_cve_list.md)
 
 ## Information for Attackers
