@@ -13,7 +13,10 @@ This is a site with some container security resources. It is (and probably alway
 
 Resources for pentesters/redteamers and people looking to get more information about the offensive side of container security. Methodologies for testing and some tooling information.
 
-- [Attacker info](attackers/index.md)
+- [External Attacker Checklist](attackers/external_attacker_checklist.md)
+- [Compromised Container Checklist](attackers/compromised_container_checklist.md)
+- [Compromised User Credentials Checklist](attackers/compromised_user_credentials_checklist.md)
+- [Attacker Manifests](atttackers/attacker_manifests.md)
 - [Tools List](attackers/tools_list.md)
 
 ## Information for Defenders
