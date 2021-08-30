@@ -72,23 +72,3 @@
 
 - [Tenable Blog Post](https://www.tenable.com/blog/cve-2019-14271-proof-of-concept-for-docker-copy-docker-cp-vulnerability-released)
 
-## Kubernetes
-
-### CVE-2018-1002105 - Kubernetes Aggregated API
-
-- [Mitre](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-1002105)
-- [Kubernetes Advisory](https://discuss.kubernetes.io/t/kubernetes-security-announcement-v1-10-11-v1-11-5-v1-12-3-released-to-address-cve-2018-1002105/3700)
-- [Aqua Blog Post](https://blog.aquasec.com/kubernetes-security-cve-2018-1002105)
-
-### CVE-2019-11253 - YAML DoS
-
-- [Github Issue](https://github.com/kubernetes/kubernetes/issues/83253)
-
-### CVE-2019-11251 - kubectl cp file overwrite
-
-- [Stackrox Blog Post](https://www.stackrox.com/post/2019/09/beyond-patching-fixing-kubectl-cp-cve-2019-11251/)
-
-### CVE-2020-8558 - Localhost remote networking
-
-- [Github Issue](https://github.com/kubernetes/kubernetes/issues/90259)
-
