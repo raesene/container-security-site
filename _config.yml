@@ -1,4 +1,4 @@
-theme: jekyll-theme-hacker
+remote_theme: pmarsceill/just-the-docs
 plugins:
   - jekyll-feed
 title: [container-security site]
