@@ -2,10 +2,6 @@
 
 ## Kubernetes
 
-- CVE-ID
-- Title
-- Affected Versions
-- Patched versions
 
 |CVE-ID   |CVSS Score   |Title   |Affected Versions   | Patched Versions |
 |---|---|---|---|---|
@@ -21,8 +17,18 @@
 |[CVE-2020-8557](https://groups.google.com/g/kubernetes-security-announce/c/cB_JUsYEKyY)| 5.5  | Node disk DOS by writing to container /etc/hosts | v1.18.0-1.18.5, v1.17.0-1.17.8, earlier than  v1.16.13  | v1.18.6, v1.17.9, v1.16.13  |
 |[CVE-2020-8555](https://groups.google.com/g/kubernetes-security-announce/c/kEK27tqqs30)| 6.3 | Half-Blind SSRF in kube-controller-manager  | v1.18.0, v1.17.0 - v1.17.4, v1.16.0 - v1.16.8, earlier than < v1.15.11  | v1.18.1, v1.17.5, v1.16.9, v1.15.12  |
 |[CVE-2019-11254](https://groups.google.com/g/kubernetes-security-announce/c/wuwEwZigXBc)| 6.5  | denial of service vulnerability from malicious YAML payloads  |v1.17.0-v1.17.2, v1.16.0-v1.16.6, earlier than v1.15.10  | v1.17.3, v1.16.7, v1.15.10  |
-|[CVE-2020-8552](https://groups.google.com/g/kubernetes-security-announce/c/2UOlsba2g0s)| 5.3 |  |  |  |
-|[CVE-2020-8551](https://groups.google.com/g/kubernetes-security-announce/c/2UOlsba2g0s)  | 4.3  |  |  |  |
+|[CVE-2020-8552](https://groups.google.com/g/kubernetes-security-announce/c/2UOlsba2g0s)| 5.3 | Denial of service from authenticated requests to the Kube API server| v1.17.0-v1.17.2, v1.16.0-v1.16.6, earlier than v1.15.10  | v1.17.3, v1.16.7, v1.15.10
+|[CVE-2020-8551](https://groups.google.com/g/kubernetes-security-announce/c/2UOlsba2g0s)| 4.3  | Denial of service from authenticated requests to the Kubelet |v1.17.0-v1.17.2, v1.16.0-v1.16.6, v1.15.0-v1.15.10 | v1.17.3, v1.16.7, v1.15.10|
+|[CVE-2019-11253](https://groups.google.com/g/kubernetes-security-announce/c/jk8polzSUxs)| 7.5   | Denial of Service from malicious YAML or JSON payloads  | v1.16.0-v1.16.1, v1.15.0-v1.15-4, v1.14.0-v1.14.7, earlier than v1.13.11  | v1.16.2,v1.15.5,v1.14.8,v1.13.12 |
+|[CVE-2019-11251](https://groups.google.com/g/kubernetes-security-announce/c/6vTrp6tVpHo)|  5.7  | kubectl cp could lead to files being create outside its destination directory   | v1.15.0-v1.15.3, v1.14.0-v1.14.6, earlier than v1.13.10  | v1.16.0, v1.15.4, v1.14.7, v1.13.11 |
+|[CVE-2019-11248](https://groups.google.com/g/kubernetes-security-announce/c/pKELclHIov8)| 8.2  | The debugging endpoint /debug/pprof is exposed over the unauthenticated Kubelet healthz port  | v1.14.0 - v1.14.4, v1.13.0 - v1.13.8, earlier than v1.12.10   | v1.15.0, v1.14.4, v1.13.8, and v1.12.10   |
+|[CVE-2019-11247](https://groups.google.com/g/kubernetes-security-announce/c/vUtEcSEY6SM)| 8.1  | API server allows access to custom resources via wrong scope  | v1.15.0 - v1.15.1, v1.14.0 - v1.14.5, earlier than v1.13.9  | v1.15.2, v1.14.5, v1.13.9   |
+|[CVE-2019-11249](https://groups.google.com/g/kubernetes-security-announce/c/vUtEcSEY6SM)| 6.5   | kubectl cp potential directory traversal  | v1.15.0 - v1.15.1, v1.14.0 - v1.14.5, earlier than v1.13.9  | v1.15.2, v1.14.5, v1.13.9 |
+|[CVE-2019-11246](https://groups.google.com/g/kubernetes-security-announce/c/NLs2TGbfPdo)| 6.5  | kubectl cp could lead to files being create outside its destination directory  |  v1.14.0-v1.14.1, v1.13.0-v1.13.5, earlier than v1.12.9  | v1.12.9, v1.13.6, v1.14.2   |
+|[CVE-2019-11245](https://groups.google.com/g/kubernetes-security-announce/c/lAs07uKLq2k)| 7.8  | Security regression in Kubernetes kubelet  | v1.13.6, v1.14.2   | v1.13.7, v1.14.3   |
+|[CVE-2019-1002101](https://groups.google.com/g/kubernetes-security-announce/c/OYFV1hiDE2w)| 5.5  | kubectl - potential directory traversal in kubectl cp  | v1.13.0-v1.13.4, v1.12.0-v1.12.6, earlier than v1.11.9   | v1.11.9, v1.12.7, v1.13.5, v1.14.0    |
+|[CVE-2019-1002100](https://groups.google.com/g/kubernetes-security-announce/c/i-HEIs8WC5w)|6.5 | kube-apiserver authenticated DoS risk  | v1.13.0 - v1.13.3, v1.12.0 - v1.12.5, earlier than v1.11.8    | v1.11.8, v1.12.6, v1.13.4    |
+|[CVE-2018-1002105](https://groups.google.com/g/kubernetes-security-announce/c/fm1MkmubMoI)|9.8 | kuberneretes Aggregated API credential re-use  | v1.12.0-v1.12.2, v1.11.0-v1.11.4, earlier than v1.10.11   | v1.10.11, v1.11.5, v1.12.3   |
 
 - Information from [kubernetes-security-announce](https://groups.google.com/g/kubernetes-security-announce)
 
