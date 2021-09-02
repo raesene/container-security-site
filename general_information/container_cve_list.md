@@ -47,6 +47,10 @@
 
 - [NVD](https://nvd.nist.gov/vuln/detail/CVE-2019-16884)
 
+### CVE-2021-30465 - Container Filesystem Breakout via Directory Traversal
+
+- [GitHub advisory](https://github.com/advisories/GHSA-c3xm-pvg7-gh7r)
+
 ## ContainerD
 
 ### CVE-2020-15157 - Containerdrip
@@ -71,4 +75,3 @@
 ### CVE-2019-14271 - Docker cp code execution
 
 - [Tenable Blog Post](https://www.tenable.com/blog/cve-2019-14271-proof-of-concept-for-docker-copy-docker-cp-vulnerability-released)
-
