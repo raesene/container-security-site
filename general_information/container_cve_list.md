@@ -50,6 +50,7 @@
 ### CVE-2021-30465 - Container Filesystem Breakout via Directory Traversal
 
 - [GitHub advisory](https://github.com/advisories/GHSA-c3xm-pvg7-gh7r)
+- [Etienne Champtar's Blog](http://blog.champtar.fr/runc-symlink-CVE-2021-30465/) - This is from the researcher that found it.
 
 ## ContainerD
 
