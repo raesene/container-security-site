@@ -67,14 +67,8 @@
 
 ## Docker
 
-### CVE-2017-14992 - DoS via gzip bomb
+|CVE-ID   |CVSS Score   |Title   |Affected Versions   | Patched Versions | More Info |
+| [CVE-2019-14271](https://nvd.nist.gov/vuln/detail/CVE-2019-14271)  | 9.8 | docker cp vulnerability | 19.03 | 19.03.1 | [Tenable Blog Post](https://www.tenable.com/blog/cve-2019-14271-proof-of-concept-for-docker-copy-docker-cp-vulnerability-released) |
+| [CVE-2018-15664](https://nvd.nist.gov/vuln/detail/CVE-2018-15664)  | 7.5 | docker cp race condition   |  < 18.06.1-ce-rc2 | 18.06.1-ce-rc2  | [Capsule8 blog post](https://capsule8.com/blog/race-conditions-cloudy-with-a-chance-of-r-w-access/) |
+| [CVE-2017-14992](https://nvd.nist.gov/vuln/detail/CVE-2017-14992)  | 6.5 | Dos via gzip bomb   | < 17.09.1 | 17.09.1 |  |
 
-- [NVD](https://nvd.nist.gov/vuln/detail/CVE-2017-14992)
-
-### CVE-2018-15664 - Docker cp Race Condition
-
-- [Capsule8 blog post](https://capsule8.com/blog/race-conditions-cloudy-with-a-chance-of-r-w-access/)
-
-### CVE-2019-14271 - Docker cp code execution
-
-- [Tenable Blog Post](https://www.tenable.com/blog/cve-2019-14271-proof-of-concept-for-docker-copy-docker-cp-vulnerability-released)
