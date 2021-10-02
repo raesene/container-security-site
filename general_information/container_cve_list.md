@@ -68,7 +68,14 @@
 ## Docker
 
 |CVE-ID   |CVSS Score   |Title   |Affected Versions   | Patched Versions | More Info |
-| [CVE-2019-14271](https://nvd.nist.gov/vuln/detail/CVE-2019-14271)  | 9.8 | docker cp vulnerability | 19.03 | 19.03.1 | [Tenable Blog Post](https://www.tenable.com/blog/cve-2019-14271-proof-of-concept-for-docker-copy-docker-cp-vulnerability-released) |
-| [CVE-2018-15664](https://nvd.nist.gov/vuln/detail/CVE-2018-15664)  | 7.5 | docker cp race condition   |  < 18.06.1-ce-rc2 | 18.06.1-ce-rc2  | [Capsule8 blog post](https://capsule8.com/blog/race-conditions-cloudy-with-a-chance-of-r-w-access/) |
-| [CVE-2017-14992](https://nvd.nist.gov/vuln/detail/CVE-2017-14992)  | 6.5 | Dos via gzip bomb   | < 17.09.1 | 17.09.1 |  |
+| [CVE-2021-21285](https://github.com/moby/moby/security/advisories/GHSA-6fj5-m822-rqx8) | 6.5 | Docker daemon crash during image pull of malicious image | < 19.03.15, < 20.10.3 | 19.03.15, 20.10.3  |   |
+| [CVE-2021-21284](https://github.com/moby/moby/security/advisories/GHSA-7452-xqpj-6rpc) | 6.8 | Access to remapped root allows privilege escalation to real root | < 19.03.15, < 20.10.3 | 19.03.15, 20.10.3 |  |
+| [CVE-2020-27534](https://nvd.nist.gov/vuln/detail/CVE-2020-27534) | 5.3 | Docker calls os.OpenFile with a potentially unsafe qemu-check temporary pathname  | < 19.03.9 | 19.03.9 |  |
+| [CVE-2019-14271](https://nvd.nist.gov/vuln/detail/CVE-2019-14271) | 9.8 | docker cp vulnerability | 19.03 | 19.03.1 | [Tenable Blog Post](https://www.tenable.com/blog/cve-2019-14271-proof-of-concept-for-docker-copy-docker-cp-vulnerability-released) |
+| [CVE-2019-13509](https://nvd.nist.gov/vuln/detail/CVE-2019-13509) | 7.5 | Docker Engine in debug mode may sometimes add secrets to the debug log  | < 18.09.8  | 18.09.8   |  |
+| [CVE-2019-13139](https://nvd.nist.gov/vuln/detail/CVE-2019-13139) | 8.4 | Manipulation of the build path for the "docker build" command could allow for command execution | < 18.09.4 | 18.09.4 |  |
+| [CVE-2018-15664](https://nvd.nist.gov/vuln/detail/CVE-2018-15664) | 7.5 | docker cp race condition   |  < 18.06.1-ce-rc2 | 18.06.1-ce-rc2  | [Capsule8 blog post](https://capsule8.com/blog/race-conditions-cloudy-with-a-chance-of-r-w-access/) |
+| [CVE-2017-14992](https://nvd.nist.gov/vuln/detail/CVE-2017-14992) | 6.5 | Dos via gzip bomb   | < 17.09.1 | 17.09.1 |  |
 
+
+|  |  |  |  |  |  |
