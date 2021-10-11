@@ -56,14 +56,13 @@
 
 ## ContainerD
 
-### CVE-2020-15157 - Containerdrip
+|CVE-ID   |CVSS Score   |Title   |Affected Versions   | Patched Versions | More Info |
+| [CVE-2021-41103](https://github.com/containerd/containerd/security/advisories/GHSA-c2h3-6mxw-7mvq) | 5.9 |  Insufficiently restricted permissions on container root and plugin directories | <1.4.11,<1.5.7 | 1.4.11,1.5.7 |  |
+| [CVE-2021-32760](https://github.com/containerd/containerd/security/advisories/GHSA-c72p-9xmj-rx3w) | 6.3 | Archive package allows chmod of file outside of unpack target directory | <=1.4.7, <=1.5.3  | 1.5.4, 1.4.8  |  |
+| [CVE-2021-21334](https://github.com/containerd/containerd/security/advisories/GHSA-6g2q-w5j3-fwh4) | 6.3 | containerd CRI plugin: environment variables can leak between containers  | <=1.3.9, <= 1.4.3 | 1.3.10, 1.4.4 |  |
+| [CVE-2020-15157](https://github.com/containerd/containerd/security/advisories/GHSA-742w-89gc-8m9c) | 6.1 | containerd v1.2.x can be coerced into leaking credentials during image pull | < 1.3.0  | 1.2.14, 1.3.0  | [Darkbit Blog Post](https://darkbit.io/blog/cve-2020-15157-containerdrip) |
+| [CVE-2020-15257](https://github.com/containerd/containerd/security/advisories/GHSA-36xw-fx78-c5r4) | 5.2 | containerd-shim API exposed to host network containers | <=1.3.7, 1.4.0, 1.4.1 | 1.3.9, 1.4.3 | [NCC Group Technical Vulnerability Discussion](https://research.nccgroup.com/2020/12/10/abstract-shimmer-cve-2020-15257-host-networking-is-root-equivalent-again/) |
 
-- [Darkbit Blog Post](https://darkbit.io/blog/cve-2020-15157-containerdrip) - This is from the people who found the issue, describing it.
-
-### CVE-2020-15257 - Abstract Shimmer
-
-- [NCC Group Advisory](https://research.nccgroup.com/2020/11/30/technical-advisory-containerd-containerd-shim-api-exposed-to-host-network-containers-cve-2020-15257/)
-- [NCC Group Technical Vulnerability Discussion](https://research.nccgroup.com/2020/12/10/abstract-shimmer-cve-2020-15257-host-networking-is-root-equivalent-again/)
 
 ## Docker
 
