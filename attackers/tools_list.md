@@ -27,6 +27,7 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [kube-hunter](https://github.com/aquasecurity/kube-hunter) - Tool to test and exploit standard Kubernetes Security Vulnerabilities.
 * [kubestrike](https://github.com/vchinnipilli/kubestrike) - Security auditing tool for Kubernetes looks at Authenticated and unauthenticated scanning.
 * [peirates](https://github.com/inguardians/peirates) - Kubernetes container breakout tool
+* [kdigger](https://github.com/quarkslab/kdigger) - Kubernetes breakout/discovery tool
 
 ### Kubelet Tooling
 
