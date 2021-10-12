@@ -16,7 +16,7 @@ Resources for pentesters/redteamers and people looking to get more information a
 - [External Attacker Checklist](attackers/external_attacker_checklist.md)
 - [Compromised Container Checklist](attackers/compromised_container_checklist.md)
 - [Compromised User Credentials Checklist](attackers/compromised_user_credentials_checklist.md)
-- [Attacker Manifests](atttackers/attacker_manifests.md)
+- [Attacker Manifests](attackers/attacker_manifests.md)
 - [Tools List](attackers/tools_list.md)
 
 ## Information for Defenders
