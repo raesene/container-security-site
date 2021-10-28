@@ -98,8 +98,13 @@ This is a list of more in-depth articles than can be worth reading to get a bett
 
 # Books 
 
+## Security Books
 - [Free Container Security book from Aqua](https://info.aquasec.com/container-security-book)
 - [Free Kubernetes Security book from Aqua](https://info.aquasec.com/kubernetes-security)
+- [Hacking Kubernetes](https://www.oreilly.com/library/view/hacking-kubernetes/9781492081722/)
+- [Cloud Native Security](https://www.amazon.co.uk/Cloud-Native-Security-Chris-Binnie-ebook/dp/B097NHC3BS)
+
+## General Books
 - [Free Kubernetes Up and Running from VMWare](https://k8s.vmware.com/kubernetes-up-and-running/)
 - [Docker in Practice](https://www.manning.com/books/docker-in-practice-second-edition)
 - [Kubernetes in Action](https://www.manning.com/books/kubernetes-in-action-second-edition)
