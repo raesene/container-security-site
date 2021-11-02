@@ -64,6 +64,12 @@ This is a list of more in-depth articles than can be worth reading to get a bett
 - [Post on Docker Authorization plugins](https://blog.aquasec.com/docker-1.10-security-features-part-2-authorization-plug-in)
 
 
+## Container Registry Security 
+
+ - [Post about how registries can be used/abused](https://www.antitree.com/2021/10/abusing-registries-for-exfil-and-droppers/)
+ - [ContainerDrip write-up with good details on how registries work](https://darkbit.io/blog/cve-2020-15157-containerdrip)
+
+
 # Docker Swarm
 
 - [Docker Swarm Certificate management](https://docs.docker.com/engine/swarm/how-swarm-mode-works/pki/)
