@@ -4,6 +4,7 @@ A list of CVEs in the various parts of the container stack that could allow for 
 
 With Linux issues it can be a bit tricky to say if they're container escapes or not so generally looking at ones where container escape has been demonstrated.
 
+
 ## Linux CVEs
 - [CVE-2022-0185](https://www.willsroot.io/2022/01/cve-2022-0185.html) - Local privilege escalation, needs CAP_SYS_ADMIN either at the host level or in a user namesspace
 - [CVE-2021-31440](https://www.zerodayinitiative.com/blog/2021/5/26/cve-2021-31440-an-incorrect-bounds-calculation-in-the-linux-kernel-ebpf-verifier) - eBPF incorrect bounds calculation allows for privesc.
@@ -22,8 +23,10 @@ With Linux issues it can be a bit tricky to say if they're container escapes or 
 ## Kubernetes CVES
 - [CVE-2021-25741](https://groups.google.com/g/kubernetes-security-announce/c/nyfdhK24H7s) - race condition in when using hostPath volumes allows for privileged access to host filesystem
 - [CVE-2021-25737](https://groups.google.com/g/kubernetes-security-announce/c/xAiN3924thY) - unauthorized access to host network stack by using endpoint slices
+- [CVE-2017-1002101](https://github.com/kubernetes/kubernetes/issues/60813) - subpath volume mount handling allows arbitrary file access in host filesystem
 
 
 ## Reference Links
 
 - [Linux Kernel Exploitation](https://github.com/xairy/linux-kernel-exploitation/blob/master/README.md) - Extensive maintained list of links relating to Linux Kernel Exploitation
+- [Hacking Kubernetes](https://hacking-kubernetes.info/) - Hacking Kubernetes book site has a set of Container Breakout CVEs
