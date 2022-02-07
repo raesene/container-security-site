@@ -3,3 +3,7 @@ plugins:
   - jekyll-feed
 title: [container-security site]
 description: [A site about container security]
+
+aux_links:
+  "Edit on GitHub":
+    - "https://github.com/raesene/container-security-site"
