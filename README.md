@@ -18,10 +18,11 @@ Resources for pentesters/redteamers and people looking to get more information a
 - [Compromised User Credentials Checklist](attackers/compromised_user_credentials_checklist.md)
 - [Attacker Manifests](attackers/attacker_manifests.md)
 - [Tools List](attackers/tools_list.md)
+- [Container Breakout Vulnerabilities](attackers/container_breakout_vulnerabilities.md)
 
 ## Information for Defenders
 
-- Work in progress :)
+- [Kubernetes Security Architecture Considerations](defenders/kubernetes_security_architecture_considerations.md)
 
 ![](images/under_construction.gif)
 

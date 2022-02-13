@@ -27,6 +27,7 @@ This is an (at the moment) random list of things to think about when architectin
   - Access to ESCALATE, IMPERSONATE or BIND as RBAC verbs can allow privilege escalation.
 - The `system:masters` group is **hard-coded** into the API server and provides cluster-admin rights to the cluster.
   - Access by a user using this group bypasses authorization webhooks (i.e. the request is never sent to the webhook)
+- Access to the node/proxy resource allows for privilege escalation via the kubelet API. Users with this right can either go via the Kubernetes API server to access the kubelet API, *or* go directly to the kubelet API. The kubelet API does not have audit logs and its use bypasses admission control.
 
 ## Networking
 
@@ -47,3 +48,8 @@ This is an (at the moment) random list of things to think about when architectin
 
 ## DNS
  - At the moment it is possible to use DNS to enumerate all pods and services in a cluster, which can make leak information especially in multi-tenant clusters. (CoreDNS Issue [here](https://github.com/coredns/coredns/issues/4984)) (script to demonstrate [here](https://github.com/raesene/alpine-containertools/blob/master/scripts/k8s-dns-enum.rb))
+
+## Auditing
+- Kubernetes auditing is not enabled by default.
+- Allowing direct access to the kubelet API effectively bypasses auditing, so care should be taken in allowing this.
+- Whilst audit logging provides the user who made the request it doesn't log the authentication mechanism used. As such if there are multiple configured authentication mechanisms (e.g. certificate authentication and OIDC) there is a risk that an attacker can create a user account which would appear to be that of another legitimate user
