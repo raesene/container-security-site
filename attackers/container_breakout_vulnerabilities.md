@@ -24,6 +24,7 @@ With Linux issues it can be a bit tricky to say if they're container escapes or 
 - [CVE-2021-25741](https://groups.google.com/g/kubernetes-security-announce/c/nyfdhK24H7s) - race condition in when using hostPath volumes allows for privileged access to host filesystem
 - [CVE-2021-25737](https://groups.google.com/g/kubernetes-security-announce/c/xAiN3924thY) - unauthorized access to host network stack by using endpoint slices
 - [CVE-2017-1002101](https://github.com/kubernetes/kubernetes/issues/60813) - subpath volume mount handling allows arbitrary file access in host filesystem
+- [CVE-2017-1002102](https://github.com/kubernetes/kubernetes/issues/60814) - Arbitrary deletion of files on the host possible when using some Kubernetes volume types
 
 
 ## Reference Links
