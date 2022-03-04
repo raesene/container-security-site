@@ -24,6 +24,12 @@ Resources for pentesters/redteamers and people looking to get more information a
 
 - [Kubernetes Security Architecture Considerations](defenders/kubernetes_security_architecture_considerations.md)
 
+## Security Research
+
+Content that relates to container security but doesn't neatly fit in to attacker/defender buckets
+
+- [Node/Proxy Rights in Kubernetes](security_research/node_proxy.md)
+
 ![](images/under_construction.gif)
 
 
