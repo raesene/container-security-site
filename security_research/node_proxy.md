@@ -66,8 +66,6 @@ More seriously, any user with node/proxy rights can bypass any security controls
 
 ## Demonstrating direct Kubelet access with node/proxy
 
-{%youtube o4iW8FjnG78 %}
-
 Here's a set of manifests that can be used to demonstrate the issue. Create the three manifests in a cluster of your choosing (where you can reach the kubelet port at a network level)
 
 **ServiceAccount**
