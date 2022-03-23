@@ -6,8 +6,9 @@ With Linux issues it can be a bit tricky to say if they're container escapes or 
 
 
 ## Linux CVEs
-- [CVE-2022-0185](https://www.willsroot.io/2022/01/cve-2022-0185.html) - Local privilege escalation, needs CAP_SYS_ADMIN either at the host level or in a user namesspace
+- [CVE-2022-0185](https://www.willsroot.io/2022/01/cve-2022-0185.html) - Local privilege escalation, needs CAP_SYS_ADMIN either at the host level or in a user namespace
 - [CVE-2021-31440](https://www.zerodayinitiative.com/blog/2021/5/26/cve-2021-31440-an-incorrect-bounds-calculation-in-the-linux-kernel-ebpf-verifier) - eBPF incorrect bounds calculation allows for privesc.
+- [CVE-2021-22555](https://google.github.io/security-research/pocs/linux/cve-2021-22555/writeup.html) - Linux LPE used to break out of Kubernetes pod by the researcher
 - [CVE-2017-1000112](https://capsule8.com/blog/practical-container-escape-exercise/) - memory corruption in UFO packets.
 - [CVE-2016-5195](https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2016-5195) - (a.k.a 'dirty CoW') - race condition leading to incorrect handling of Copy on Write.
 - [CVE-2017-5123](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5123) - vulnerability in the WaitID syscall.
