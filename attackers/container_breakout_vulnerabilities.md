@@ -6,6 +6,9 @@ With Linux issues it can be a bit tricky to say if they're container escapes or 
 
 
 ## Linux CVEs
+
+- [CVE-2022-0847](https://dirtypipe.cm4all.com/) - a.k.a DirtyPipe. Vulnerability allows for overwrite of files that should be read-only. Basic container information [here](https://blog.aquasec.com/cve-2022-0847-dirty-pipe-linux-vulnerability), full container breakout PoC writeup [here](https://www.datadoghq.com/blog/engineering/dirty-pipe-container-escape-poc/) and code [here](https://github.com/DataDog/dirtypipe-container-breakout-poc)
+- [CVE-2022-0492](https://access.redhat.com/security/cve/cve-2022-0492). Vulnerability in cgroup handling can allow for container breakout depending on isolation layers in place. Container breakout details [here](https://unit42.paloaltonetworks.com/cve-2022-0492-cgroups/)
 - [CVE-2022-0185](https://www.willsroot.io/2022/01/cve-2022-0185.html) - Local privilege escalation, needs CAP_SYS_ADMIN either at the host level or in a user namespace
 - [CVE-2021-31440](https://www.zerodayinitiative.com/blog/2021/5/26/cve-2021-31440-an-incorrect-bounds-calculation-in-the-linux-kernel-ebpf-verifier) - eBPF incorrect bounds calculation allows for privesc.
 - [CVE-2021-22555](https://google.github.io/security-research/pocs/linux/cve-2021-22555/writeup.html) - Linux LPE used to break out of Kubernetes pod by the researcher
@@ -17,6 +20,12 @@ With Linux issues it can be a bit tricky to say if they're container escapes or 
 - [CVE-2021-30465](http://blog.champtar.fr/runc-symlink-CVE-2021-30465/) - race condition when mounting volumes into a container allows for host access.
 - [CVE-2019-5736](https://blog.dragonsector.pl/2019/02/cve-2019-5736-escape-from-docker-and.html) - overwrite runc binary on the host system at container start.
 - [CVE-2016-9962](https://bugzilla.suse.com/show_bug.cgi?id=1012568#c2) - access to a host file descriptor allows for breakout.
+
+## Containerd CVEs
+- [CVE-2022-23648](https://bugs.chromium.org/p/project-zero/issues/detail?id=2244) - Vuln in volume mounting allows for arbitrary file read from the underlying host, leading to likely indirect container breakout. PoC exploit [here](https://github.com/raesene/CVE-2022-23648-POC)
+
+## CRI-O CVEs
+- [CVE-2022-0811](https://www.crowdstrike.com/blog/cr8escape-new-vulnerability-discovered-in-cri-o-container-engine-cve-2022-0811/) - Vulnerability in setting sysctls in k8s/OpenShift manifests allows for container breakout. Linked post has full PoC details.
 
 ## Docker CVEs
 - [CVE-2021-21284](https://github.com/moby/moby/security/advisories/GHSA-7452-xqpj-6rpc) - When using user namespaces, a user with some access to the host filesystem can modify files which they should not have access to.
