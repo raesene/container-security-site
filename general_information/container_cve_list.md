@@ -57,7 +57,10 @@
 ## ContainerD
 
 |CVE-ID   |CVSS Score   |Title   |Affected Versions   | Patched Versions | More Info |
-| [CVE-2021-41103](https://github.com/containerd/containerd/security/advisories/GHSA-c2h3-6mxw-7mvq) | 5.9 |  Insufficiently restricted permissions on container root and plugin directories | <1.4.11,<1.5.7 | 1.4.11,1.5.7 |  |
+| [CVE-2022-24769](https://github.com/containerd/containerd/security/advisories/GHSA-c9cp-9c75-9v8c) | 5.9 | Default inheritable capabilities for linux container should be empty | <= 1.5.10, 1.6.0, 1.6.1 | 1.5.11, 1.6.2 |  |
+| [CVE-2022-23648](https://github.com/containerd/containerd/security/advisories/GHSA-crp2-qrr5-8pq7) | 7.5 | containerd CRI plugin: Insecure handling of image volumes | <= 1.4.12, 1.5.0 - 1.5.9, 1.6.0 | 1.4.13, 1.5.10, 1.6.1 | [PoC repo](https://github.com/raesene/CVE-2022-23648-POC) |
+| [CVE-2021-43816](https://github.com/containerd/containerd/security/advisories/GHSA-mvff-h3cj-wj9c) | 9.1 | containerd CRI plugin: Unprivileged pod using `hostPath` can side-step SELinux | >= 1.5.0, < 1.5.9 | 1.5.9 |  |
+| [CVE-2021-41103](https://github.com/containerd/containerd/security/advisories/GHSA-c2h3-6mxw-7mvq) | 5.9 | nsufficiently restricted permissions on container root and plugin directories | <1.4.11,<1.5.7 | 1.4.11,1.5.7 |  |
 | [CVE-2021-32760](https://github.com/containerd/containerd/security/advisories/GHSA-c72p-9xmj-rx3w) | 6.3 | Archive package allows chmod of file outside of unpack target directory | <=1.4.7, <=1.5.3  | 1.5.4, 1.4.8  |  |
 | [CVE-2021-21334](https://github.com/containerd/containerd/security/advisories/GHSA-6g2q-w5j3-fwh4) | 6.3 | containerd CRI plugin: environment variables can leak between containers  | <=1.3.9, <= 1.4.3 | 1.3.10, 1.4.4 |  |
 | [CVE-2020-15157](https://github.com/containerd/containerd/security/advisories/GHSA-742w-89gc-8m9c) | 6.1 | containerd v1.2.x can be coerced into leaking credentials during image pull | < 1.3.0  | 1.2.14, 1.3.0  | [Darkbit Blog Post](https://darkbit.io/blog/cve-2020-15157-containerdrip) |
