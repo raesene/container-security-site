@@ -8,6 +8,7 @@ This is a site with some container security resources. It is (and probably alway
 - [Container Terms for Security people](jargon_busters/container_terms_for_security_people.md)
 - [Security Terms for Container people](jargon_busters/security_terms_for_container_people.md)
 - [Container CVE List](general_information/container_cve_list.md)
+- [Container/Kubernetes Security Tools](general_information/tools_list.md)
 
 ## Information for Attackers
 
@@ -17,7 +18,6 @@ Resources for pentesters/redteamers and people looking to get more information a
 - [Compromised Container Checklist](attackers/compromised_container_checklist.md)
 - [Compromised User Credentials Checklist](attackers/compromised_user_credentials_checklist.md)
 - [Attacker Manifests](attackers/attacker_manifests.md)
-- [Tools List](attackers/tools_list.md)
 - [Container Breakout Vulnerabilities](attackers/container_breakout_vulnerabilities.md)
 
 ## Information for Defenders
