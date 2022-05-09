@@ -27,6 +27,11 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [docker bench](https://github.com/docker/docker-bench-security) - Docker CIS Benchmark assessment tool
 * [Dockle](https://github.com/goodwithtech/dockle) - Container Image Linter
 
+## Container Runtime Security Tools
+
+* [Tracee](https://github.com/aquasecurity/tracee). Container runtime security tooling
+* [Falco](https://github.com/falcosecurity/falco). Container runtime security tooling
+
 ## Container Orchestration Tools
 
 ### RBAC Assessment Tooling
@@ -62,6 +67,10 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [reg](https://github.com/genuinetools/reg) - Tool for interacting with Container registries
 * [regclient](https://github.com/regclient/regclient) - Another tool for interacting with container registries
 * [go-pillage-registries](https://github.com/nccgroup/go-pillage-registries) - Tool to search the manifests and configuration for images in a registry for potentially sensitive information
+
+### Security Observability Tools
+
+* [ThreatMapper](https://github.com/deepfence/ThreatMapper). Cloud + Container Security observability
 
 ### Training Tools
 
