@@ -1,6 +1,6 @@
-# Comtainer & Kubernetes Security Tools
+# Container & Kubernetes Security Tools
 
-## Container Attack Surface Assessment & Breakout
+## Container Attack Surface Assessment & Breakout Tools
 
 Useful tools to run inside a container to assess the sandbox that's in use, and exploit some common breakout issues.
 
@@ -33,7 +33,7 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [Falco](https://github.com/falcosecurity/falco). Container runtime security tooling
 * [Kubearmor](https://github.com/kubearmor/KubeArmor). Container runtime security enforcement tool
 
-## Container Registry Tooling
+## Container Registry Tools
 
 * [reg](https://github.com/genuinetools/reg) - Tool for interacting with Container registries
 * [regclient](https://github.com/regclient/regclient) - Another tool for interacting with container registries
@@ -42,7 +42,7 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 
 ## Container Orchestration Tools
 
-### RBAC Assessment Tooling
+### RBAC Assessment Tools
 
 * [kubectl-who-can](https://github.com/aquasecurity/kubectl-who-can) - Tool that lets you ask "who can" do things in RBAC, e.g. who can get secrets
 * [rakkess](https://github.com/corneliusweig/rakkess) - Shows the RBAC permissions available to a user as a list
@@ -59,23 +59,23 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [kubesec](https://github.com/controlplaneio/kubesec) - Kubernetes security assessment tool focusing on workload security
 * [kubescore](https://github.com/zegl/kube-score) - Kubernetes security and reliability assessment tool focusing on workload security.
 
-### Kubernetes Penetration Testing Tool
+### Kubernetes Penetration Testing Tools
 
 * [kube-hunter](https://github.com/aquasecurity/kube-hunter) - Tool to test and exploit standard Kubernetes Security Vulnerabilities
 * [kubestrike](https://github.com/vchinnipilli/kubestrike) - Security auditing tool for Kubernetes looks at Authenticated and unauthenticated scanning
 * [peirates](https://github.com/inguardians/peirates) - Kubernetes container breakout tool
 * [kdigger](https://github.com/quarkslab/kdigger) - Kubernetes breakout/discovery tool
 
-### Kubernetes Post-Exploitation Tool
+### Kubernetes Post-Exploitation Tools
 
 * [kubesploit](https://github.com/cyberark/kubesploit) - Kubesploit is a cross-platform post-exploitation HTTP/2 Command & Control server and agent written in Golang, focused on containerized environments
 
 
-### Kubelet Tooling
+### Kubelet Tools
 
 * [kubeletctl](https://github.com/cyberark/kubeletctl) - This is a good tool to automate the process of assessing a kubelet instance. If the instance is vulnerable it can also carry out some exploit tasks
 
-### etcd Tooling
+### etcd Tools
 
 * [auger](https://github.com/jpbetz/auger) - Tool for decoding information pulled directly from the etcd database
 
