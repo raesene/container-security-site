@@ -31,6 +31,14 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 
 * [Tracee](https://github.com/aquasecurity/tracee). Container runtime security tooling
 * [Falco](https://github.com/falcosecurity/falco). Container runtime security tooling
+* [Kubearmor](https://github.com/kubearmor/KubeArmor). Container runtime security enforcement tool
+
+## Container Registry Tooling
+
+* [reg](https://github.com/genuinetools/reg) - Tool for interacting with Container registries
+* [regclient](https://github.com/regclient/regclient) - Another tool for interacting with container registries
+* [go-pillage-registries](https://github.com/nccgroup/go-pillage-registries) - Tool to search the manifests and configuration for images in a registry for potentially sensitive information
+
 
 ## Container Orchestration Tools
 
@@ -39,6 +47,9 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [kubectl-who-can](https://github.com/aquasecurity/kubectl-who-can) - Tool that lets you ask "who can" do things in RBAC, e.g. who can get secrets
 * [rakkess](https://github.com/corneliusweig/rakkess) - Shows the RBAC permissions available to a user as a list
 * [rback](https://github.com/team-soteria/rback) - tool for graphical representation of RBAC permissions in a kubernetes cluster
+* [rbac-tool](https://github.com/alcideio/rbac-tool) - RBAC Tool for Kubernetes
+* [kubiScan](https://github.com/cyberark/KubiScan) - Tool to scan Kubernetes clusters for risky permissions
+* [krane](https://github.com/appvia/krane) - Kubernetes RBAC static analysis & visualisation tool
 
 ### Kubernetes Security Auditing Tools
 
@@ -46,6 +57,7 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [kubescape](https://github.com/armosec/kubescape) - Kubernetes security assessment tool
 * [kubeaudit](https://github.com/Shopify/kubeaudit) - Kubernetes security assessment tool focusing on workload security
 * [kubesec](https://github.com/controlplaneio/kubesec) - Kubernetes security assessment tool focusing on workload security
+* [kubescore](https://github.com/zegl/kube-score) - Kubernetes security and reliability assessment tool focusing on workload security.
 
 ### Kubernetes Penetration Testing Tool
 
@@ -54,6 +66,11 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [peirates](https://github.com/inguardians/peirates) - Kubernetes container breakout tool
 * [kdigger](https://github.com/quarkslab/kdigger) - Kubernetes breakout/discovery tool
 
+### Kubernetes Post-Exploitation Tool
+
+* [kubesploit](https://github.com/cyberark/kubesploit) - Kubesploit is a cross-platform post-exploitation HTTP/2 Command & Control server and agent written in Golang, focused on containerized environments
+
+
 ### Kubelet Tooling
 
 * [kubeletctl](https://github.com/cyberark/kubeletctl) - This is a good tool to automate the process of assessing a kubelet instance. If the instance is vulnerable it can also carry out some exploit tasks
@@ -61,12 +78,6 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 ### etcd Tooling
 
 * [auger](https://github.com/jpbetz/auger) - Tool for decoding information pulled directly from the etcd database
-
-### Container Registry Tooling
-
-* [reg](https://github.com/genuinetools/reg) - Tool for interacting with Container registries
-* [regclient](https://github.com/regclient/regclient) - Another tool for interacting with container registries
-* [go-pillage-registries](https://github.com/nccgroup/go-pillage-registries) - Tool to search the manifests and configuration for images in a registry for potentially sensitive information
 
 ### Security Observability Tools
 
