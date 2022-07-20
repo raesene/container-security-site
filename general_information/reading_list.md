@@ -86,6 +86,8 @@ This is a list of more in-depth articles than can be worth reading to get a bett
 
 # Kubernetes Networking
 
+- [Website that goes into detail on the Kubernetes networking model](https://k8s.networkop.co.uk/)
+
 - Good set of posts on Container networking setup
   - [part one](https://itnext.io/an-illustrated-guide-to-kubernetes-networking-part-1-d1ede3322727)
   - [part two](https://itnext.io/an-illustrated-guide-to-kubernetes-networking-part-2-13fdc6c4e24c)
