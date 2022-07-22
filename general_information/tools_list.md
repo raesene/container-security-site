@@ -90,3 +90,8 @@ If you're looking to practice with some of the tools here, in a safe environment
 * [Kube Security Lab](https://github.com/raesene/kube_security_lab) - Basic set of Kubernetes security scenarios implemented in Ansible with KinD
 * [Kubernetes Simulator](https://github.com/kubernetes-simulator/simulator) - AWS based Kubernetes cluster environment with different vulnerability scenarios
 * [Kubernetes Goat](https://github.com/madhuakula/kubernetes-goat) - Focuses on vulnerable deployments on top of an existing cluster. Also available on line [with Katacoda](https://katacoda.com/madhuakula/scenarios/kubernetes-goat)
+
+### Kubernetes Honeypot projects
+
+* [k8spot](https://github.com/Maddosaurus/k8spot) - Kubernetes honeypot.
+* [Helix Honeypot](https://github.com/Zeerg/helix-honeypot) - Kubernetes API server honeypot
