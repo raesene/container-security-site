@@ -50,6 +50,7 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [rbac-tool](https://github.com/alcideio/rbac-tool) - RBAC Tool for Kubernetes
 * [kubiScan](https://github.com/cyberark/KubiScan) - Tool to scan Kubernetes clusters for risky permissions
 * [krane](https://github.com/appvia/krane) - Kubernetes RBAC static analysis & visualisation tool
+* [RBAC Police](https://github.com/PaloAltoNetworks/rbac-police) - RBAC policy evaluation.
 
 ### Kubernetes Security Auditing Tools
 
