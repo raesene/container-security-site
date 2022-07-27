@@ -22,7 +22,7 @@ This is an (at the moment) random list of things to think about when architectin
 
 ## RBAC
 
-- There are various RBAC rights that can allow for Privilege escalation
+- There are various RBAC rights that can allow for Privilege escalation (there's a Kubernetes Docs page on this with more information [here](https://kubernetes.io/docs/concepts/security/rbac-good-practices/#privilege-escalation-risks))
   - GET or LIST on secrets at a cluster level (or possibly at a namespace level) will allow for privesc via service account secrets. N.B. LIST on its own will do this.
   - Access to ESCALATE, IMPERSONATE or BIND as RBAC verbs can allow privilege escalation.
 - The `system:masters` group is **hard-coded** into the API server and provides cluster-admin rights to the cluster.
@@ -38,8 +38,7 @@ This is an (at the moment) random list of things to think about when architectin
 ## Pod Security Standards
 
 - Without restriction on privileged containers, pods can be used to escalate privileges to node access
-- Some capabilities will similarly allow for node access
-  - CAP_SYS_ADMIN
+- Some capabilities like CAP_SYS_ADMINwill similarly allow for node access
 
 ## Distributions
 
