@@ -58,6 +58,7 @@ This is a list of more in-depth articles than can be worth reading to get a bett
 - [Post about LXC and capabilities](https://blog.iwakd.de/lxc-cap_sys_admin-jessie)
 - [Post detailing how Docker uses cgroups](https://shekhargulati.com/2019/01/03/how-docker-uses-cgroups-to-set-resource-limits/)
 - [Abusing Privileged and Unprivileged Linux Containers](https://www.nccgroup.com/globalassets/our-research/us/whitepapers/2016/june/abusing-privileged-and-unprivileged-linux-containers.pdf) whitepaper on container breakout techniques, including focus on NET_RAW.
+- [Good post on Capabilites, seccomp and the practical use of file capabilities](https://linuxera.org/container-security-capabilities-seccomp/)
 
 # Docker Security
 
