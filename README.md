@@ -24,6 +24,8 @@ Resources for pentesters/redteamers and people looking to get more information a
 ## Information for Defenders
 
 - [Kubernetes Security Architecture Considerations](defenders/kubernetes_security_architecture_considerations.md)
+- [Kubernetes RBAC Good Practice](https://kubernetes.io/docs/concepts/security/rbac-good-practices/) - This docs page gives guidance on avoiding common Kubernetes RBAC pitfalls.
+- [Kubernetes API Server Bypass Risks](https://kubernetes.io/docs/concepts/security/api-server-bypass-risks/) - This docs page shows places where it may be possible to bypass the Kubernetes API server, an important point as many security controls are focused on the API server.
 
 ## Security Research
 
