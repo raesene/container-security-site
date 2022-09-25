@@ -9,6 +9,7 @@ This is a site with some container security resources. It is (and probably alway
 - [Security Terms for Container people](jargon_busters/security_terms_for_container_people.md)
 - [Container CVE List](general_information/container_cve_list.md)
 - [Container/Kubernetes Security Tools](general_information/tools_list.md)
+- [Container Security Standards](general_information/conatiner_security_standards.md)
 
 ## Information for Attackers
 
