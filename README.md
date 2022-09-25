@@ -1,6 +1,6 @@
 # Container Security Site
 
-This is a site with some container security resources. It is (and probably always will be) a work in progress, but hopefully you'll find some useful information. Issues and PRs welcome using the link above.
+This is a site with some container security resources. It is (and probably always will be) a work in progress, but hopefully you'll find some useful information. Issues and PRs welcome [on GitHub](https://github.com/raesene/container-security-site).
 
 ## General Information
 
@@ -33,6 +33,6 @@ Content that relates to container security but doesn't neatly fit in to attacker
 
 - [Node/Proxy Rights in Kubernetes](security_research/node_proxy.md)
 
-![](images/under_construction.gif)
+
 
 
