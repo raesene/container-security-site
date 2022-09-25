@@ -3,6 +3,7 @@ plugins:
   - jekyll-feed
 title: [container-security site]
 description: [A site about container security]
+logo: "images/logo.png"
 
 aux_links:
   "Edit on GitHub":
