@@ -39,23 +39,12 @@ There is now an officially maintained list for Kubernetes Security vulnerabiliti
 
 ## runc
 
-### CVE-2016-9962 - container escape via ptrace
+|CVE-ID   |CVSS Score   |Title   |Affected Versions   | Patched Versions | More Info |
+|[CVE-2021-30465](https://github.com/advisories/GHSA-c3xm-pvg7-gh7r) | 7.6 |Container Filesystem Breakout via Directory Traversal | <= 1.0.0-rc94 |1.0.0-rc95 |[Etienne Champtar's Blog](http://blog.champtar.fr/runc-symlink-CVE-2021-30465/) |
+|[CVE-2019-16884](https://nvd.nist.gov/vuln/detail/CVE-2019-16884) | 7.5 |Apparmor restriction bypass | <= 1.0-rc8 | 1.0-rc9 | |
+|[CVE-CVE-2019-5736](https://nvd.nist.gov/vuln/detail/CVE-2019-5736) | 8.6 |Runc Privileged Escalation | <= 1.0-rc6 | 1.0-rc7 | [Dragon Sector Blog](https://blog.dragonsector.pl/2019/02/cve-2019-5736-escape-from-docker-and.html) |
+|[CVE-2016-9962](https://nvd.nist.gov/vuln/detail/CVE-2016-9962) | 6.4 |container escape via ptrace | Docker < 1.12.6 | Docker => 1.12.6 | |
 
-- [NVD](https://nvd.nist.gov/vuln/detail/CVE-2016-9962)
-
-### CVE-2019-5736 - Runc Privileged Escalation
-
-- [Mitre](CVE-2019-5736)
-- [Dragon Sector Blog](https://blog.dragonsector.pl/2019/02/cve-2019-5736-escape-from-docker-and.html) - This is from the people who found the issue, describing it.
-
-### CVE-2019-16884 - Apparmor restriction bypass
-
-- [NVD](https://nvd.nist.gov/vuln/detail/CVE-2019-16884)
-
-### CVE-2021-30465 - Container Filesystem Breakout via Directory Traversal
-
-- [GitHub advisory](https://github.com/advisories/GHSA-c3xm-pvg7-gh7r)
-- [Etienne Champtar's Blog](http://blog.champtar.fr/runc-symlink-CVE-2021-30465/) - This is from the researcher that found it.
 
 ## ContainerD
 
