@@ -2,9 +2,12 @@
 
 ## Kubernetes
 
+There is now an officially maintained list for Kubernetes Security vulnerabilities [here](https://kubernetes.io/docs/reference/issues-security/official-cve-feed/), I'll continue to maintain the list below for additional info links, but in general the official list is the best place for the latest vulns.
 
 |CVE-ID   |CVSS Score   |Title   |Affected Versions   | Patched Versions |
 |---|---|---|---|---|
+|[CVE-2022-3172](https://github.com/kubernetes/kubernetes/issues/112513) | 5.1 | Aggregated API server can cause clients to be redirected (SSRF) | Earlier than v1.21.14,  v1.22.0 - v1.22.13, v1.23.0 - v1.23.10, v1.24.0 - v1.24.4, v1.25.0 | v1.22.14, v1.23.11, v1.24.5, v1.25.1 |
+|[CVE-2021-25749](https://github.com/kubernetes/kubernetes/issues/112192) | 3.4 | `runAsNonRoot` logic bypass for Windows containers |  v1.20 - v1.21,  v1.22.0 - v1.22.13,  v1.23.0 - v1.23.10, v1.24.0 - v1.24.4 | v1.22.14, v1.23.11, v1.24.5, v1.25.0 |
 |[CVE-2020-8561](https://groups.google.com/g/kubernetes-security-announce/c/RV2IhwcrQsY) | 4.1 | Webhook redirect in kube-apiserver | All | No Patch Available |
 |[CVE-2021-25741](https://groups.google.com/g/kubernetes-security-announce/c/nyfdhK24H7s)| 8.8 | Symlink Exchange Can Allow Host Filesystem Access | v1.22.0 - v1.22.1, v1.21.0 - v1.21.4, v1.20.0 - v1.20.10, Earlier than v1.19.15 | v1.22.2, v1.21.5, v1.20.11, v1.19.15 |
 |[CVE-2021-25740](https://groups.google.com/g/kubernetes-security-announce/c/WYE9ptrhSLE)| 3.1 | Endpoint & EndpointSlice permissions allow cross-Namespace forwarding   |  All | No Patch Available (mitigations in advisory) |
