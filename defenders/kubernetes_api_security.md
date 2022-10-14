@@ -1,3 +1,0 @@
-# Kubernetes API Security
-
-**TBD**
