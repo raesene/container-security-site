@@ -42,6 +42,8 @@ There is now an officially maintained list for Kubernetes Security vulnerabiliti
 ## runc
 
 |CVE-ID   |CVSS Score   |Title   |Affected Versions   | Patched Versions | More Info |
+|[CVE-2022-29162](https://github.com/opencontainers/runc/security/advisories/GHSA-f3fp-gc8g-vw66) | 7.8 | Default inheritable capabilities for linux container should be empty | < 1.1.2 | 1.1.2 | |
+|[CVE-2021-43784](https://github.com/opencontainers/runc/security/advisories/GHSA-v95c-p5hm-xq8f) | 5.0 |Overflow in netlink bytemsg length field allows attacker to override netlink-based container configuration  | <1.0.3 | 1.0.3 | |
 |[CVE-2021-30465](https://github.com/advisories/GHSA-c3xm-pvg7-gh7r) | 7.6 |Container Filesystem Breakout via Directory Traversal | <= 1.0.0-rc94 |1.0.0-rc95 |[Etienne Champtar's Blog](http://blog.champtar.fr/runc-symlink-CVE-2021-30465/) |
 |[CVE-2019-16884](https://nvd.nist.gov/vuln/detail/CVE-2019-16884) | 7.5 |Apparmor restriction bypass | <= 1.0-rc8 | 1.0-rc9 | |
 |[CVE-CVE-2019-5736](https://nvd.nist.gov/vuln/detail/CVE-2019-5736) | 8.6 |Runc Privileged Escalation | <= 1.0-rc6 | 1.0-rc7 | [Dragon Sector Blog](https://blog.dragonsector.pl/2019/02/cve-2019-5736-escape-from-docker-and.html) |
@@ -51,6 +53,7 @@ There is now an officially maintained list for Kubernetes Security vulnerabiliti
 ## ContainerD
 
 |CVE-ID   |CVSS Score   |Title   |Affected Versions   | Patched Versions | More Info |
+| [ CVE-2022-31030](https://github.com/containerd/containerd/security/advisories/GHSA-5ffw-gxpp-mxpf) | 5.5 | containerd CRI plugin: Host memory exhaustion through ExecSync | <= 1.5.12, 1.6.0, 1.6.1, 1.6.2, 1.6.3, 1.6.4, 1.6.5 | 1.5.13, 1.6.6 |  |
 | [CVE-2022-24769](https://github.com/containerd/containerd/security/advisories/GHSA-c9cp-9c75-9v8c) | 5.9 | Default inheritable capabilities for linux container should be empty | <= 1.5.10, 1.6.0, 1.6.1 | 1.5.11, 1.6.2 |  |
 | [CVE-2022-23648](https://github.com/containerd/containerd/security/advisories/GHSA-crp2-qrr5-8pq7) | 7.5 | containerd CRI plugin: Insecure handling of image volumes | <= 1.4.12, 1.5.0 - 1.5.9, 1.6.0 | 1.4.13, 1.5.10, 1.6.1 | [PoC repo](https://github.com/raesene/CVE-2022-23648-POC) |
 | [CVE-2021-43816](https://github.com/containerd/containerd/security/advisories/GHSA-mvff-h3cj-wj9c) | 9.1 | containerd CRI plugin: Unprivileged pod using `hostPath` can side-step SELinux | >= 1.5.0, < 1.5.9 | 1.5.9 |  |
@@ -64,6 +67,10 @@ There is now an officially maintained list for Kubernetes Security vulnerabiliti
 ## Docker
 
 |CVE-ID   |CVSS Score   |Title   |Affected Versions   | Patched Versions | More Info |
+| [CVE-2022-36109](https://github.com/moby/moby/security/advisories/GHSA-rc4r-wh2q-q6c4) | 6.3 | Security vulnerability relating to supplementary group permissions | < 20.10.18 | 20.10.18  |   |
+| [CVE-2021-41190](https://github.com/moby/moby/security/advisories/GHSA-xmmx-7jpf-fx42) | 5.0 | Ambiguous OCI manifest parsing | < 20.10.11 | 20.10.11  |   |
+| [CVE-2021-41091](https://github.com/moby/moby/security/advisories/GHSA-3fwx-pjgw-3558) | 6.3 | Insufficiently restricted permissions on data directory | < 20.10.9 | 20.10.9  |   |
+| [CVE-2021-41089](https://github.com/moby/moby/security/advisories/GHSA-v994-f8vw-g7j4) | 6.3 | `docker cp` allows unexpected chmod of host files  | < 20.10.9 | 20.10.9  |   |
 | [CVE-2021-21285](https://github.com/moby/moby/security/advisories/GHSA-6fj5-m822-rqx8) | 6.5 | Docker daemon crash during image pull of malicious image | < 19.03.15, < 20.10.3 | 19.03.15, 20.10.3  |   |
 | [CVE-2021-21284](https://github.com/moby/moby/security/advisories/GHSA-7452-xqpj-6rpc) | 6.8 | Access to remapped root allows privilege escalation to real root | < 19.03.15, < 20.10.3 | 19.03.15, 20.10.3 |  |
 | [CVE-2020-27534](https://nvd.nist.gov/vuln/detail/CVE-2020-27534) | 5.3 | Docker calls os.OpenFile with a potentially unsafe qemu-check temporary pathname  | < 19.03.9 | 19.03.9 |  |
