@@ -6,6 +6,8 @@ There is now an officially maintained list for Kubernetes Security vulnerabiliti
 
 |CVE-ID   |CVSS Score   |Title   |Affected Versions   | Patched Versions |
 |---|---|---|---|---|
+|[CVE-2022-3294](https://github.com/kubernetes/kubernetes/issues/113757) | 6.6 | Node address isn't always verified when proxying | Earlier than v1.21.14,  v1.22.0 - v1.22.15, v1.23.0 - v1.23.13, v1.24.0 - v1.24.7, v1.25.0 - v1.25.3 | v1.22.16, v1.23.14, v1.24.8, v1.25.4 |
+|[CVE-2022-3162](https://github.com/kubernetes/kubernetes/issues/113756) | 6.5 | Unauthorized read of Custom Resources | Earlier than v1.21.14,  v1.22.0 - v1.22.15, v1.23.0 - v1.23.13, v1.24.0 - v1.24.7, v1.25.0 - v1.25.3 | v1.22.16, v1.23.14, v1.24.8, v1.25.4 |
 |[CVE-2022-3172](https://github.com/kubernetes/kubernetes/issues/112513) | 5.1 | Aggregated API server can cause clients to be redirected (SSRF) | Earlier than v1.21.14,  v1.22.0 - v1.22.13, v1.23.0 - v1.23.10, v1.24.0 - v1.24.4, v1.25.0 | v1.22.14, v1.23.11, v1.24.5, v1.25.1 |
 |[CVE-2021-25749](https://github.com/kubernetes/kubernetes/issues/112192) | 3.4 | `runAsNonRoot` logic bypass for Windows containers |  v1.20 - v1.21,  v1.22.0 - v1.22.13,  v1.23.0 - v1.23.10, v1.24.0 - v1.24.4 | v1.22.14, v1.23.11, v1.24.5, v1.25.0 |
 |[CVE-2020-8561](https://groups.google.com/g/kubernetes-security-announce/c/RV2IhwcrQsY) | 4.1 | Webhook redirect in kube-apiserver | All | No Patch Available |
