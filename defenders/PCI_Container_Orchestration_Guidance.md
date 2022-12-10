@@ -16,7 +16,7 @@ The guidance is fairly generic, so to help apply this specifically to Kubernetes
 - [Container Monitoring](https://raesene.github.io/blog/2022/11/19/PCI-Kubernetes-Section8-monitoring/)
 - [Runtime Security](https://raesene.github.io/blog/2022/11/27/PCI-Kubernetes-Section9-Runtime-Security/)
 - [Patching](https://raesene.github.io/blog/2022/12/03/PCI-Kubernetes-Section10-Patching/)
-- Resource Management
+- [Resource Management](https://raesene.github.io/blog/2022/12/10/PCI-Kubernetes-Section11-Resource-Management/)
 - Container Image Building
 - Registry
 - Version Management
