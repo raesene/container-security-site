@@ -17,8 +17,8 @@ The guidance is fairly generic, so to help apply this specifically to Kubernetes
 - [Runtime Security](https://raesene.github.io/blog/2022/11/27/PCI-Kubernetes-Section9-Runtime-Security/)
 - [Patching](https://raesene.github.io/blog/2022/12/03/PCI-Kubernetes-Section10-Patching/)
 - [Resource Management](https://raesene.github.io/blog/2022/12/10/PCI-Kubernetes-Section11-Resource-Management/)
-- Container Image Building
-- Registry
+- [Container Image Building](https://raesene.github.io/blog/2022/12/12/PCI-Kubernetes-Section12-Container-Image-Building/)
+- [Registry](https://raesene.github.io/blog/2022/12/14/PCI-Kubernetes-Section13-Registry/)
 - Version Management
 - Configuration Management
 - Segmentation
