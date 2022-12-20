@@ -21,4 +21,4 @@ The guidance is fairly generic, so to help apply this specifically to Kubernetes
 - [Registry](https://raesene.github.io/blog/2022/12/14/PCI-Kubernetes-Section13-Registry/)
 - [Version Management](https://raesene.github.io/blog/2022/12/16/PCI-Kubernetes-Section14-Version-Management/)
 - [Configuration Management](https://raesene.github.io/blog/2022/12/18/PCI-Kubernetes-Section15-Configuration-Management/)
-- Segmentation
+- [Segmentation](https://raesene.github.io/blog/2022/12/20/PCI-Kubernetes-Section16-Segmentation/)
