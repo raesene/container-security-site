@@ -1,0 +1,18 @@
+# Kubernetes persistence checklist
+
+Once you've got access to a cluster, if part of the review includes checking for persistence, there are some ways in Kubernetes to do that. Essentially there are three options for persistence
+
+1. Service Account Secrets. In Kubernetes < 1.24, all service accounts in the cluster have an associated secret (which is a JWT token) which do not expire. If you have access to secrets, especially in the `kube-system` namespace, you can take a copy of the secret and use it to authenticate to the cluster indefinitely.
+  - First check permissions using `kubectl auth can-i get secrets -n kube-system` this will let you know if you have acesss.
+  - Then if you have access, just run `kubectl get secrets -n kube-system -o yaml` and copy the secret you want. The `token` field is the JWT token.
+  - You can then use the token with `kubectl -s [SERVER] --token [TOKEN] [COMMAND]` to authenticate to the cluster. Take care that there is not a kubeconfig file in the home directory of the user you are running this as, as it will take precedence over the command line supplied token.
+2. CSR API. If you have access to the Certificate Signing Request API, you can use it to mint new client ceritificates for the cluster, which will give you persistent access to the cluster. To do this you'll ideally need `update` on `certificatesigningrequests/approval` resources, but TBH you're likely to get that through having a `cluster-admin` level account.
+  - First check permissions using `kubectl auth can-i update certificatesigningrequests/approval` this will let you know if you have acesss.
+  - Next you need a good username to use for the cert. likely the best generic one would be `system:kube-controller-manager` as it has a lot of permissions generally and the activity from it looks like generic system activity so might not be noticed by the blue team.
+  - With this you could manually create and approve a CSR, but it's easier to to it with [teisteanas](https://github.com/raesene/teisteanas). Just run `teisteanas -username system:kube-controller-manager -output-file controller.kubeconfig` which will create a new kubeconfig with a client certificate with that username, it should also tell you how long it'll be valid for (the default is 12 months)
+  - now to check access just do `kubectl --kubeconfig controller.kubeconfig auth can-i --list` and you'll see a list of rights including `get` secrets at the cluster level, so that should be good for persistence.
+3. TokenRequest API. This one hit release in Kubernetes 1.22, so will work on more modern versions. It was also beta before that so this technique might work with some tweaking but you can generally use the secret version there, so no need :) 
+  - First check permissions using `kubectl auth can-i create serviceaccounts/token -n kube-system` this will let you know if you have acesss.
+  - Second you need a system service account with good rights. `persistent-volume-binder` is a good one that will exist in most clusters. it has `get` on secrets at a cluster level and also the ability to create new pods, amongst other things.
+  - Again you can do this next bit manually but [tòcan](https://github.com/raesene/tocan) can make it easier. `tocan -service-account persistent-volume-binder -output-file pvb.kubeconfig -namespace kube-system -expiration-seconds 31536000` will create a new kubeconfig file from that service account using a token which should last for a year. Be aware that some managed k8s versions limit token lifetime (e.g. EKS and GKE), so this would be less useful then.
+  - then check permissions with `kubectl --kubeconfig pvb.kubeconfig auth can-i --list`

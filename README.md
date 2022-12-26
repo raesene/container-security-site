@@ -12,6 +12,7 @@ This is a site with some container security resources. It is (and probably alway
 - [Container Security Standards](general_information/container_security_standards.md)
 - [Container Support Lifecycles](general_information/support_lifecycles.md)
 
+
 ## Information for Attackers
 
 Resources for pentesters/redteamers and people looking to get more information about the offensive side of container security. Methodologies for testing and some tooling information.
@@ -21,9 +22,11 @@ Resources for pentesters/redteamers and people looking to get more information a
 - [Compromised User Credentials Checklist](attackers/compromised_user_credentials_checklist.md)
 - [Attacker Manifests](attackers/attacker_manifests.md)
 - [Container Breakout Vulnerabilities](attackers/container_breakout_vulnerabilities.md)
+- [Kubernetes Persistence Checklist](attackers/kubernetes_persistence_checklist.md)
 
 ## Information for Defenders
 
+- [PCI Container Orchestration Guidance for Kubernetes](defenders/PCI_Container_Orchestration_Guidance.md)
 - [Kubernetes Security Architecture Considerations](defenders/kubernetes_security_architecture_considerations.md)
 - [Kubernetes RBAC Good Practice](https://kubernetes.io/docs/concepts/security/rbac-good-practices/) - This docs page gives guidance on avoiding common Kubernetes RBAC pitfalls.
 - [Kubernetes API Server Bypass Risks](https://kubernetes.io/docs/concepts/security/api-server-bypass-risks/) - This docs page shows places where it may be possible to bypass the Kubernetes API server, an important point as many security controls are focused on the API server.
