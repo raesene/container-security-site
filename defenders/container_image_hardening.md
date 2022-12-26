@@ -14,4 +14,12 @@ Things like statically compiled Golang or ASP.Net Core applications can often wo
 
 ### Google Distroless
 
-**TBD**
+[Google Distroless images](https://github.com/GoogleContainerTools/distroless) provide a very small but more functional image than scratch. They include some important files like timezone files and SSL certificates. These files mean they have a wider/easier compatibility than scratch images, but they are still very small and have a very limited attack surface.
+
+### Alpine
+
+[Alpine Linux](https://www.alpinelinux.org/) is a popular option for smaller Container images. It has the advantage of small base image, but keeps the option of easily adding new operating system packages where needed. There can be some compatibility challenges as they default to using `musl` rather than `gcc` for C libraries, but alpine based images have pretty wide compatibility.
+
+### Wolfi 
+
+[Wolfi OS](https://github.com/wolfi-dev) is a project dedicated to producing minimal container images. The package manager is based on Alpine Linux's APK and there's support for `glibc` and `musl`. It's a newer option than the alternatives mentioned here but worth considering to see if it's a good fit for your use case.
