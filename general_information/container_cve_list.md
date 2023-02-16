@@ -53,7 +53,10 @@ There is now an officially maintained list for Kubernetes Security vulnerabiliti
 ## ContainerD
 
 |CVE-ID   |CVSS Score   |Title   |Affected Versions   | Patched Versions | More Info |
-| [ CVE-2022-31030](https://github.com/containerd/containerd/security/advisories/GHSA-5ffw-gxpp-mxpf) | 5.5 | containerd CRI plugin: Host memory exhaustion through ExecSync | <= 1.5.12, 1.6.0, 1.6.1, 1.6.2, 1.6.3, 1.6.4, 1.6.5 | 1.5.13, 1.6.6 |  |
+| [CVE-2023-25153](https://github.com/containerd/containerd/security/advisories/GHSA-259w-8hf6-59c2) | 5.5 | OCI image importer memory exhaustion | <= 1.5.17, 1.6.0-1.6.17 | 1.5.18, 1.6.18 |  |
+| [CVE-2023-25173](https://github.com/containerd/containerd/security/advisories/GHSA-hmfx-3pcx-653p) | 5.5 | Supplementary groups are not set up properly | <= 1.5.17, 1.6.0-1.6.17 | 1.5.18, 1.6.18 |  |
+| [CVE-2022-23471](https://github.com/containerd/containerd/security/advisories/GHSA-2qjp-425j-52j9) | 5.7 | containerd CRI stream server: Host memory exhaustion through Terminal resize goroutine leak | < 1.5.16, 1.6.0-1.6.11 | 1.5.16, 1.6.12 |  |
+| [CVE-2022-31030](https://github.com/containerd/containerd/security/advisories/GHSA-5ffw-gxpp-mxpf) | 5.5 | containerd CRI plugin: Host memory exhaustion through ExecSync | <= 1.5.12, 1.6.0, 1.6.1, 1.6.2, 1.6.3, 1.6.4, 1.6.5 | 1.5.13, 1.6.6 |  |
 | [CVE-2022-24769](https://github.com/containerd/containerd/security/advisories/GHSA-c9cp-9c75-9v8c) | 5.9 | Default inheritable capabilities for linux container should be empty | <= 1.5.10, 1.6.0, 1.6.1 | 1.5.11, 1.6.2 |  |
 | [CVE-2022-23648](https://github.com/containerd/containerd/security/advisories/GHSA-crp2-qrr5-8pq7) | 7.5 | containerd CRI plugin: Insecure handling of image volumes | <= 1.4.12, 1.5.0 - 1.5.9, 1.6.0 | 1.4.13, 1.5.10, 1.6.1 | [PoC repo](https://github.com/raesene/CVE-2022-23648-POC) |
 | [CVE-2021-43816](https://github.com/containerd/containerd/security/advisories/GHSA-mvff-h3cj-wj9c) | 9.1 | containerd CRI plugin: Unprivileged pod using `hostPath` can side-step SELinux | >= 1.5.0, < 1.5.9 | 1.5.9 |  |
