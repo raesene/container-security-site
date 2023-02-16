@@ -59,6 +59,7 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [kubeaudit](https://github.com/Shopify/kubeaudit) - Kubernetes security assessment tool focusing on workload security
 * [kubesec](https://github.com/controlplaneio/kubesec) - Kubernetes security assessment tool focusing on workload security
 * [kubescore](https://github.com/zegl/kube-score) - Kubernetes security and reliability assessment tool focusing on workload security.
+* [eathar](https://github.com/raesene/eathar) - Kubernetes security assessment tool focusing on workload security and RBAC.
 
 ### Kubernetes Penetration Testing Tools
 
@@ -66,6 +67,8 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [kubestrike](https://github.com/vchinnipilli/kubestrike) - Security auditing tool for Kubernetes looks at Authenticated and unauthenticated scanning
 * [peirates](https://github.com/inguardians/peirates) - Kubernetes container breakout tool
 * [kdigger](https://github.com/quarkslab/kdigger) - Kubernetes breakout/discovery tool
+* [teisteanas](https://github.com/raesene/teisteanas) - Tool to create kubeconfig files based on the CertificateSigningRequest API.
+* [tòcan](https://github.com/raesene/tocan) - Tool to create kubeconfig files based on the TokenRequest API.
 
 ### Kubernetes Post-Exploitation Tools
 
