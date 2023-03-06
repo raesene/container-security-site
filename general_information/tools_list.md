@@ -60,6 +60,7 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [kubesec](https://github.com/controlplaneio/kubesec) - Kubernetes security assessment tool focusing on workload security
 * [kubescore](https://github.com/zegl/kube-score) - Kubernetes security and reliability assessment tool focusing on workload security.
 * [eathar](https://github.com/raesene/eathar) - Kubernetes security assessment tool focusing on workload security and RBAC.
+* [popeye](https://github.com/derailed/popeye) - Kubernetes cluster scanner, looking for possible mis-configurations
 
 ### Kubernetes Penetration Testing Tools
 
@@ -69,6 +70,8 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [kdigger](https://github.com/quarkslab/kdigger) - Kubernetes breakout/discovery tool
 * [teisteanas](https://github.com/raesene/teisteanas) - Tool to create kubeconfig files based on the CertificateSigningRequest API.
 * [tòcan](https://github.com/raesene/tocan) - Tool to create kubeconfig files based on the TokenRequest API.
+* [kubestroyer](https://github.com/Rolix44/Kubestroyer) - Kubernetes pentesting tool.
+* [kubestalk](https://github.com/redhuntlabs/kubestalk) - Black Box Kubernetes Pentesting Tool.
 
 ### Kubernetes Post-Exploitation Tools
 
@@ -99,3 +102,8 @@ If you're looking to practice with some of the tools here, in a safe environment
 
 * [k8spot](https://github.com/Maddosaurus/k8spot) - Kubernetes honeypot.
 * [Helix Honeypot](https://github.com/Zeerg/helix-honeypot) - Kubernetes API server honeypot
+
+### Kubernetes Security Improvement Tools
+
+* [Security Profiles Operator](https://github.com/kubernetes-sigs/security-profiles-operator) - Kubernetes operator for security profiles
+* [hardeneks](https://github.com/aws-samples/hardeneks) - Tool to harden EKS clusters
