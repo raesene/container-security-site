@@ -72,6 +72,7 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [tòcan](https://github.com/raesene/tocan) - Tool to create kubeconfig files based on the TokenRequest API.
 * [kubestroyer](https://github.com/Rolix44/Kubestroyer) - Kubernetes pentesting tool.
 * [kubestalk](https://github.com/redhuntlabs/kubestalk) - Black Box Kubernetes Pentesting Tool.
+* [kubedagger](https://github.com/yasindce1998/KubeDagger) - Kubernetes offensive framework built in eBPF
 
 ### Kubernetes Post-Exploitation Tools
 
