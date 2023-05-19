@@ -11,6 +11,7 @@ This is a site with some container security resources. It is (and probably alway
 - [Container/Kubernetes Security Tools](general_information/tools_list.md)
 - [Container Security Standards](general_information/container_security_standards.md)
 - [Container Support Lifecycles](general_information/support_lifecycles.md)
+- [Container Security Talks](https://talks.container-security.site)
 
 
 ## Information for Attackers
