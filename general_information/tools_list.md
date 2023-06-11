@@ -28,6 +28,7 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 
 * [docker bench](https://github.com/docker/docker-bench-security) - Docker CIS Benchmark assessment tool
 * [Dockle](https://github.com/goodwithtech/dockle) - Container Image Linter
+* [cnspec](https://github.com/mondoohq/cnspec) - Assessment tool for multiple platforms including Docker and Kubernetes
 
 ## Container Runtime Security Tools
 
@@ -66,6 +67,7 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [kubescore](https://github.com/zegl/kube-score) - Kubernetes security and reliability assessment tool focusing on workload security.
 * [eathar](https://github.com/raesene/eathar) - Kubernetes security assessment tool focusing on workload security and RBAC.
 * [popeye](https://github.com/derailed/popeye) - Kubernetes cluster scanner, looking for possible mis-configurations.
+* [cnspec](https://github.com/mondoohq/cnspec) - Assessment tool for multiple platforms including Docker and Kubernetes
 
 
 ### Kubernetes Penetration Testing Tools
