@@ -1,6 +1,6 @@
 # Container & Kubernetes Security Tools
 
-This is a list of open source tools which help with areas related to Container security.
+This is a list of open source tools which help with areas related to Container security. Some of the tools in this list don't fit neatly into a specific category or categories, so they're listed with the closest option.
 
 ## Container Attack Surface Assessment & Breakout Tools
 
@@ -17,12 +17,15 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [Trivy](https://github.com/aquasecurity/trivy) - Vulnerability and IaC scanner
 * [Grype](https://github.com/anchore/grype) - Container vulnerability scanner
 * [clair](https://github.com/quay/clair) - Container vulnerability scanner
+* [Docker Scout](https://docs.docker.com/scout/) - Container Vulnerability scanner
+* [dep-scan](https://github.com/AppThreat/dep-scan) - Vulnerability and mis-configuration scanner
 
 ## IaC Scanning Tools that cover container formats
 
 * [Trivy](https://github.com/aquasecurity/trivy) - Vulnerability and IaC scanner
 * [Checkov](https://github.com/bridgecrewio/checkov) - IaC scanner
 * [KICS](https://github.com/Checkmarx/kics) - IaC scanner
+* [dep-scan](https://github.com/AppThreat/dep-scan) - Vulnerability and mis-configuration scanner
 
 ## Docker Security Tools
 
