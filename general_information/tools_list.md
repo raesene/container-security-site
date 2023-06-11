@@ -1,5 +1,7 @@
 # Container & Kubernetes Security Tools
 
+This is a list of open source tools which help with areas related to Container security.
+
 ## Container Attack Surface Assessment & Breakout Tools
 
 Useful tools to run inside a container to assess the sandbox that's in use, and exploit some common breakout issues.
@@ -32,6 +34,7 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [Tracee](https://github.com/aquasecurity/tracee). Container runtime security tooling
 * [Falco](https://github.com/falcosecurity/falco). Container runtime security tooling
 * [Kubearmor](https://github.com/kubearmor/KubeArmor). Container runtime security enforcement tool
+* [Tetragon](https://github.com/cilium/tetragon). Container runtime security tool
 
 ## Container Registry Tools
 
@@ -40,7 +43,7 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [go-pillage-registries](https://github.com/nccgroup/go-pillage-registries) - Tool to search the manifests and configuration for images in a registry for potentially sensitive information
 
 
-## Container Orchestration Tools
+## Kubernetes Tools
 
 ### RBAC Assessment Tools
 
@@ -51,6 +54,7 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [kubiScan](https://github.com/cyberark/KubiScan) - Tool to scan Kubernetes clusters for risky permissions
 * [krane](https://github.com/appvia/krane) - Kubernetes RBAC static analysis & visualisation tool
 * [RBAC Police](https://github.com/PaloAltoNetworks/rbac-police) - RBAC policy evaluation.
+* [eathar](https://github.com/raesene/eathar) - Kubernetes security assessment tool focusing on workload security and RBAC.
 
 ### Kubernetes Security Auditing Tools
 
@@ -60,7 +64,8 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [kubesec](https://github.com/controlplaneio/kubesec) - Kubernetes security assessment tool focusing on workload security
 * [kubescore](https://github.com/zegl/kube-score) - Kubernetes security and reliability assessment tool focusing on workload security.
 * [eathar](https://github.com/raesene/eathar) - Kubernetes security assessment tool focusing on workload security and RBAC.
-* [popeye](https://github.com/derailed/popeye) - Kubernetes cluster scanner, looking for possible mis-configurations
+* [popeye](https://github.com/derailed/popeye) - Kubernetes cluster scanner, looking for possible mis-configurations.
+
 
 ### Kubernetes Penetration Testing Tools
 
@@ -82,6 +87,7 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 ### Kubelet Tools
 
 * [kubeletctl](https://github.com/cyberark/kubeletctl) - This is a good tool to automate the process of assessing a kubelet instance. If the instance is vulnerable it can also carry out some exploit tasks
+* [kubelet dumper](https://github.com/raesene/kubelet_dumper) - PoC tool to dump Kubelet configurations for review.
 
 ### etcd Tools
 
