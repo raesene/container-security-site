@@ -40,6 +40,7 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 
 * [reg](https://github.com/genuinetools/reg) - Tool for interacting with Container registries
 * [regclient](https://github.com/regclient/regclient) - Another tool for interacting with container registries
+* [crane](https://github.com/google/go-containerregistry) - Tool for interacting with Container registries.
 * [go-pillage-registries](https://github.com/nccgroup/go-pillage-registries) - Tool to search the manifests and configuration for images in a registry for potentially sensitive information
 
 
