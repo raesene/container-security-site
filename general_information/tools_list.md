@@ -116,6 +116,7 @@ If you're looking to practice with some of the tools here, in a safe environment
 
 * [k8spot](https://github.com/Maddosaurus/k8spot) - Kubernetes honeypot.
 * [Helix Honeypot](https://github.com/Zeerg/helix-honeypot) - Kubernetes API server honeypot
+* [Kubernetes Honeytokens](https://blog.thinkst.com/2021/11/a-kubeconfig-canarytoken.html) - A honey token Canary for use with honeypots.
 
 ### Kubernetes Security Improvement Tools
 
