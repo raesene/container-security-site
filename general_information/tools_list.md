@@ -11,6 +11,7 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [deepce](https://github.com/stealthcopter/deepce) - Docker Enumeration, Escalation of Privileges and Container Escapes 
 * [botb](https://github.com/brompwnie/botb) - Container breakout assessment tool. Can automatically exploit common issues like the Docker socket mount
 * [keyctl-unmask](https://github.com/antitree/keyctl-unmask) - Tool that specifically focuses on grabbing kernel keyring entries from containers that allow the keyctl syscall
+* [CDK](https://github.com/cdk-team/CDK) - Container and Kubernetes auditing and breakout tool.
 
 ## Container Vulnerability Scanning Tools
 
@@ -85,6 +86,7 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [kubestroyer](https://github.com/Rolix44/Kubestroyer) - Kubernetes pentesting tool.
 * [kubestalk](https://github.com/redhuntlabs/kubestalk) - Black Box Kubernetes Pentesting Tool.
 * [kubedagger](https://github.com/yasindce1998/KubeDagger) - Kubernetes offensive framework built in eBPF.
+* [MKAT](https://github.com/DataDog/managed-kubernetes-auditing-toolkit/) - Managed Kubernetes Auditing Tool. Focuses on exploring security issues in managed Kubernetes (e.g. EKS)
 
 ### Kubernetes Post-Exploitation Tools
 
