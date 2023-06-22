@@ -55,6 +55,7 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 ## Container Image Tools
 
 * [Dive](https://github.com/wagoodman/dive) - Tool for exploring Container image layers
+* [Whaler](https://github.com/P3GLEG/Whaler) - Tool to reverse Docker images into Dockerfiles.
 
 
 ## Kubernetes Tools
