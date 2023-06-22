@@ -28,6 +28,8 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [Checkov](https://github.com/bridgecrewio/checkov) - IaC scanner
 * [KICS](https://github.com/Checkmarx/kics) - IaC scanner
 * [dep-scan](https://github.com/AppThreat/dep-scan) - Vulnerability and mis-configuration scanner
+* [Terrascan](https://github.com/tenable/terrascan) - IAC Scanner for various formats including Docker and Kubernetes
+* [hadolint](https://github.com/hadolint/hadolint) - Docker file linter
 
 ## Docker Security Tools
 
@@ -47,7 +49,12 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [reg](https://github.com/genuinetools/reg) - Tool for interacting with Container registries
 * [regclient](https://github.com/regclient/regclient) - Another tool for interacting with container registries
 * [crane](https://github.com/google/go-containerregistry) - Tool for interacting with Container registries.
+* [skopeo](https://github.com/containers/skopeo) - Tool for interaction with Container registries
 * [go-pillage-registries](https://github.com/nccgroup/go-pillage-registries) - Tool to search the manifests and configuration for images in a registry for potentially sensitive information
+
+## Container Image Tools
+
+* [Dive](https://github.com/wagoodman/dive) - Tool for exploring Container image layers
 
 
 ## Kubernetes Tools
