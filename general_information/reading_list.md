@@ -25,6 +25,14 @@ This is a list of more in-depth articles than can be worth reading to get a bett
 
 # Container Fundamentals
 
+### Container Security Fundamental Series
+
+- [Exploring containers as processes](https://securitylabs.datadoghq.com/articles/container-security-fundamentals-part-1/)
+- [Isolation and namespaces](https://securitylabs.datadoghq.com/articles/container-security-fundamentals-part-2/)
+- [Capabilities](https://securitylabs.datadoghq.com/articles/container-security-fundamentals-part-3/)
+- [cgroups](https://securitylabs.datadoghq.com/articles/container-security-fundamentals-part-4/)
+
+
 - [Understanding and Hardening Linux Containers](https://research.nccgroup.com/wp-content/uploads/2020/07/ncc_group_understanding_hardening_linux_containers-1-1.pdf) - Whitepaper that goes into detail about container fundamental security.
 
 - Series of posts from Ian Lewis on Container runtimes
