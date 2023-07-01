@@ -2,7 +2,7 @@
 
 This is a list of more in-depth articles than can be worth reading to get a better understanding of some of the underlying technologies used by Containers and how things like Kubernetes work.
 
-# Container History
+## Container History
 
 - [Brief Container History](https://blog.aquasec.com/a-brief-history-of-containers-from-1970s-chroot-to-docker-2016)
 - Series of posts from 2013 on the history of container engines leading up to Docker
@@ -10,20 +10,20 @@ This is a list of more in-depth articles than can be worth reading to get a bett
   - [part two](https://web.archive.org/web/20191011151348/https://www.cybera.ca/news-and-events/tech-radar/contain-your-enthusiasm-part-two-jails-zones-openvz-and-lxc/)
   - [part three](https://web.archive.org/web/20191011153243/http://www.cybera.ca/news-and-events/tech-radar/contain-your-enthusiasm-part-three-docker/ )
 
-# Docker Networking
+## Docker Networking
 
 - [Post on Linux Bridging](https://www.thegeekstuff.com/2017/06/brctl-bridge/)
 - Posts on Docker MACVLAN
   - [part one](https://web.archive.org/web/20190217173244/https://hicu.be/docker-networking-macvlan-vlan-configuration) 
   - [part two](https://web.archive.org/web/20190130130707/hicu.be/bridge-vs-macvlan)
 
-# Container Storage and Volumes
+## Container Storage and Volumes
 
 - [Post detailing how Docker union Filesystems and storage drivers work](https://integratedcode.us/2016/08/30/storage-drivers-in-docker-a-deep-dive/)
 - [Post on union file systems](https://www.terriblecode.com/blog/how-docker-images-work-union-file-systems-for-dummies/)
 - [Post with some opinions on the available Docker storage graphdrivers](https://blog.jessfraz.com/post/the-brutally-honest-guide-to-docker-graphdrivers/)
 
-# Container Fundamentals
+## Container Fundamentals
 
 ### Container Security Fundamental Series
 
@@ -68,7 +68,7 @@ This is a list of more in-depth articles than can be worth reading to get a bett
 - [Abusing Privileged and Unprivileged Linux Containers](https://www.nccgroup.com/globalassets/our-research/us/whitepapers/2016/june/abusing-privileged-and-unprivileged-linux-containers.pdf) whitepaper on container breakout techniques, including focus on NET_RAW.
 - [Good post on Capabilites, seccomp and the practical use of file capabilities](https://linuxera.org/container-security-capabilities-seccomp/)
 
-# Docker Security
+## Docker Security
 
 - [Post on Docker Authorization plugins](https://blog.aquasec.com/docker-1.10-security-features-part-2-authorization-plug-in)
 
@@ -79,21 +79,21 @@ This is a list of more in-depth articles than can be worth reading to get a bett
  - [ContainerDrip write-up with good details on how registries work](https://darkbit.io/blog/cve-2020-15157-containerdrip)
 
 
-# Docker Swarm
+## Docker Swarm
 
 - [Docker Swarm Certificate management](https://docs.docker.com/engine/swarm/how-swarm-mode-works/pki/)
 
-# runc
+## runc
 
 - [Post on how to use runc directly](https://danishpraka.sh/2020/07/24/introduction-to-runc.html)
 
-# Kubernetes - General
+## Kubernetes - General
 
 - [Post that goes into a lot of detail of how Kubernetes works to create a deployment](https://github.com/jamiehannaford/what-happens-when-k8s)
 - [Post on What a Kubernetes Pod is](https://www.ianlewis.org/en/what-are-kubernetes-pods-anyway)
 - [Post on the pause container](https://www.ianlewis.org/en/almighty-pause-container)
 
-# Kubernetes Networking
+## Kubernetes Networking
 
 - [Website that goes into detail on the Kubernetes networking model](https://k8s.networkop.co.uk/)
 
@@ -106,22 +106,26 @@ This is a list of more in-depth articles than can be worth reading to get a bett
 - [Post on how to implement a replacement for kube-proxy](https://arthurchiao.art/blog/cracking-k8s-node-proxy/)
 - [Post on how Kubernetes service traffic direction is done](https://dustinspecker.com/posts/iptables-how-kubernetes-services-direct-traffic-to-pods/)
 
-# Kubernetes Security
+## Kubernetes Security
 
 - [Playlist of Kubernetes pentesting/security videos](https://www.youtube.com/playlist?list=PLKDRii1YwXnLmd8ngltnf9Kzvbja3DJWx)
 - [Post on creating reverse shells from Docker and Kubernetes](https://raesene.github.io/blog/2019/08/09/docker-reverse-shells/)
 - [Post on getting reverse shells on every node in a cluster](https://raesene.github.io/blog/2019/08/10/making-it-rain-shells-in-Kubernetes/)
 
+## Attacking/Pentesting Kubernetes
 
-# Books 
+- [Executing code on read-only containers](https://labs.withsecure.com/publications/executing-arbitrary-code-executables-in-read-only-filesystems)
 
-## Security Books
+
+## Books 
+
+### Security Books
 - [Free Container Security book from Aqua](https://info.aquasec.com/container-security-book)
 - [Free Kubernetes Security book from Aqua](https://info.aquasec.com/kubernetes-security)
 - [Hacking Kubernetes](https://www.oreilly.com/library/view/hacking-kubernetes/9781492081722/)
 - [Cloud Native Security](https://www.amazon.co.uk/Cloud-Native-Security-Chris-Binnie-ebook/dp/B097NHC3BS)
 
-## General Books
+### General Books
 - [Free Kubernetes Up and Running from VMWare](https://k8s.vmware.com/kubernetes-up-and-running/)
 - [Docker in Practice](https://www.manning.com/books/docker-in-practice-second-edition)
 - [Kubernetes in Action](https://www.manning.com/books/kubernetes-in-action-second-edition)
