@@ -13,6 +13,9 @@ This is a site with some container security resources. It is (and probably alway
 - [Container Support Lifecycles](general_information/support_lifecycles.md)
 - [Container Security Talks](https://talks.container-security.site)
 
+## Container Security Workshop
+
+- [Slides](https://smarticu5.github.io/talks/Steelcon-Container-Security-Workshop/)
 
 ## Information for Attackers
 
