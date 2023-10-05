@@ -96,6 +96,7 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [kubedagger](https://github.com/yasindce1998/KubeDagger) - Kubernetes offensive framework built in eBPF.
 * [MKAT](https://github.com/DataDog/managed-kubernetes-auditing-toolkit/) - Managed Kubernetes Auditing Tool. Focuses on exploring security issues in managed Kubernetes (e.g. EKS)
 * [Kubehound](https://kubehound.io/) - KubeHound creates a graph of attack paths in a Kubernetes cluster
+* [MTKPI](https://github.com/r0binak/MTKPI) - Multi Tool Kubernetes Pentest Image
 
 ### Kubernetes Post-Exploitation Tools
 
