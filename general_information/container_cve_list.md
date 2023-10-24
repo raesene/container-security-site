@@ -72,7 +72,7 @@ There is now an officially maintained list for Kubernetes Security vulnerabiliti
 |CVE-ID   |CVSS Score   |Title   |Affected Versions   | Patched Versions | More Info |
 | [CVE-2022-36109](https://github.com/moby/moby/security/advisories/GHSA-rc4r-wh2q-q6c4) | 6.3 | Security vulnerability relating to supplementary group permissions | < 20.10.18 | 20.10.18  |   |
 | [CVE-2021-41190](https://github.com/moby/moby/security/advisories/GHSA-xmmx-7jpf-fx42) | 5.0 | Ambiguous OCI manifest parsing | < 20.10.11 | 20.10.11  |   |
-| [CVE-2021-41091](https://github.com/moby/moby/security/advisories/GHSA-3fwx-pjgw-3558) | 6.3 | Insufficiently restricted permissions on data directory | < 20.10.9 | 20.10.9  |   |
+| [CVE-2021-41091](https://github.com/moby/moby/security/advisories/GHSA-3fwx-pjgw-3558) | 6.3 | Insufficiently restricted permissions on data directory | < 20.10.9 | 20.10.9  | [Cyberark blog post](https://www.cyberark.com/resources/threat-research-blog/how-docker-made-me-more-capable-and-the-host-less-secure)   |
 | [CVE-2021-41089](https://github.com/moby/moby/security/advisories/GHSA-v994-f8vw-g7j4) | 6.3 | `docker cp` allows unexpected chmod of host files  | < 20.10.9 | 20.10.9  |   |
 | [CVE-2021-21285](https://github.com/moby/moby/security/advisories/GHSA-6fj5-m822-rqx8) | 6.5 | Docker daemon crash during image pull of malicious image | < 19.03.15, < 20.10.3 | 19.03.15, 20.10.3  |   |
 | [CVE-2021-21284](https://github.com/moby/moby/security/advisories/GHSA-7452-xqpj-6rpc) | 6.8 | Access to remapped root allows privilege escalation to real root | < 19.03.15, < 20.10.3 | 19.03.15, 20.10.3 |  |
