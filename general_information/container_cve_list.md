@@ -6,6 +6,13 @@ There is now an officially maintained list for Kubernetes Security vulnerabiliti
 
 |CVE-ID   |CVSS Score   |Title   |Affected Versions   | Patched Versions | More info |
 |---|---|---|---|---|
+| [CVE-2023-5528](https://nvd.nist.gov/vuln/detail/CVE-2023-5528)| 7.2 | Privilege escalation on Windows nodes via in-tree storage plugin     |   |   |   |
+| [CVE-2023-3955](https://nvd.nist.gov/vuln/detail/CVE-2023-3955) | 8.8 | Privilege escalation on Windows nodes due to insufficient input sanitization |   |   |   |
+| [CVE-2023-3893](https://nvd.nist.gov/vuln/detail/CVE-2023-3893) | 8.8 | Privilege escalation via kubernetes-csi-proxy on Windows nodes      |   |   |   |
+| [CVE-2023-3676](https://nvd.nist.gov/vuln/detail/CVE-2023-3676) | 8.8  | Privilege escalation on Windows nodes due to insufficient input sanitization |   |   |   |
+| [CVE-2023-2431](https://nvd.nist.gov/vuln/detail/CVE-2023-2431) | 3.4 | Bypass of seccomp profile enforcement|   |   |   |
+| [CVE-2023-2727](https://nvd.nist.gov/vuln/detail/CVE-2023-2727), [CVE-2023-2728](https://nvd.nist.gov/vuln/detail/CVE-2023-2728) | N/A | Bypassing policies imposed by the ImagePolicyWebhook and ServiceAccount admission plugin |   |   |   |
+| [CVE-2023-2878](https://nvd.nist.gov/vuln/detail/CVE-2023-2878) | 6.5 | Service account tokens disclosed in logs by secrets-store-csi-driver |   |   |   |
 |[CVE-2022-3294](https://github.com/kubernetes/kubernetes/issues/113757) | 6.6 | Node address isn't always verified when proxying | Earlier than v1.21.14,  v1.22.0 - v1.22.15, v1.23.0 - v1.23.13, v1.24.0 - v1.24.7, v1.25.0 - v1.25.3 | v1.22.16, v1.23.14, v1.24.8, v1.25.4 | |
 |[CVE-2022-3162](https://github.com/kubernetes/kubernetes/issues/113756) | 6.5 | Unauthorized read of Custom Resources | Earlier than v1.21.14,  v1.22.0 - v1.22.15, v1.23.0 - v1.23.13, v1.24.0 - v1.24.7, v1.25.0 - v1.25.3 | v1.22.16, v1.23.14, v1.24.8, v1.25.4 | |
 |[CVE-2022-3172](https://github.com/kubernetes/kubernetes/issues/112513) | 5.1 | Aggregated API server can cause clients to be redirected (SSRF) | Earlier than v1.21.14,  v1.22.0 - v1.22.13, v1.23.0 - v1.23.10, v1.24.0 - v1.24.4, v1.25.0 | v1.22.14, v1.23.11, v1.24.5, v1.25.1 | |
