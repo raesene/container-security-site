@@ -42,8 +42,7 @@ There is now an officially maintained list for Kubernetes Security vulnerabiliti
 ## runc
 
 |CVE-ID   |CVSS Score   |Title   |Affected Versions   | Patched Versions | More Info |
-|[CVE-2024-21626](https://github.com/opencontainers/runc/security/advisories/GHSA-xr7r-f8xq-vfvv)|8.6|
-several container breakouts due to internally leaked fds|>=v1.0.0-rc93,<=1.1.11|1.1.12|[Withsecure Write-up](https://labs.withsecure.com/publications/runc-working-directory-breakout--cve-2024-21626) |
+|[CVE-2024-21626](https://github.com/opencontainers/runc/security/advisories/GHSA-xr7r-f8xq-vfvv)|8.6| several container breakouts due to internally leaked fds|>=v1.0.0-rc93,<=1.1.11|1.1.12|[Withsecure Write-up](https://labs.withsecure.com/publications/runc-working-directory-breakout--cve-2024-21626) |
 |[CVE-2022-29162](https://github.com/opencontainers/runc/security/advisories/GHSA-f3fp-gc8g-vw66) | 7.8 | Default inheritable capabilities for linux container should be empty | < 1.1.2 | 1.1.2 | |
 |[CVE-2021-43784](https://github.com/opencontainers/runc/security/advisories/GHSA-v95c-p5hm-xq8f) | 5.0 |Overflow in netlink bytemsg length field allows attacker to override netlink-based container configuration  | <1.0.3 | 1.0.3 | |
 |[CVE-2021-30465](https://github.com/advisories/GHSA-c3xm-pvg7-gh7r) | 7.6 |Container Filesystem Breakout via Directory Traversal | <= 1.0.0-rc94 |1.0.0-rc95 |[Etienne Champtar's Blog](http://blog.champtar.fr/runc-symlink-CVE-2021-30465/) |
