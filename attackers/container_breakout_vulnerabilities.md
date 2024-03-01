@@ -51,6 +51,7 @@ With Linux issues it can be a bit tricky to say if they're container escapes or 
 
 - [Cross Container Attacks: The Bewildered eBPF on Clouds (2023)](https://www.usenix.org/system/files/usenixsecurity23-he.pdf) describes how the `CAP_BPF+CAP_PERFMON` 
  (or `CAP_SYS_ADMIN`) capabilities be abused to escape containers.
+- [Towards Improving Container Security by Preventing Runtime Escapes](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9652631) analyzes 59 CVEs for 11 container runtimes
 - [Bad Pods: Kubernetes Pod Privilege Escalation](https://bishopfox.com/blog/kubernetes-pod-privilege-escalation) describes common scenarios of dangerous Kubernetes pod configurations, and how/if it's possible to escape in each case.
 
 ## Reference Links
