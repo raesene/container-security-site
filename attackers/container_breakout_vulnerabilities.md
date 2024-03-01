@@ -17,8 +17,10 @@ With Linux issues it can be a bit tricky to say if they're container escapes or 
 - [CVE-2017-5123](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5123) - vulnerability in the WaitID syscall.
 
 ## runc CVEs
+
+- [CVE-2024-21626](https://snyk.io/blog/leaky-vessels-docker-runc-container-breakout-vulnerabilities/) - a.k.a. Leaky Vessels, allows for container escape if running a malicious image, or building a malicious Dockerfile, directly, or indirectly (i.e. through a `FROM` instruction)
 - [CVE-2021-30465](http://blog.champtar.fr/runc-symlink-CVE-2021-30465/) - race condition when mounting volumes into a container allows for host access.
-- [CVE-2019-5736](https://blog.dragonsector.pl/2019/02/cve-2019-5736-escape-from-docker-and.html) - overwrite runc binary on the host system at container start.
+- [CVE-2019-5736](https://blog.dragonsector.pl/2019/02/cve-2019-5736-escape-from-docker-and.html) - overwrite runc binary on the host system at container start, see also [explanation](https://unit42.paloaltonetworks.com/breaking-docker-via-runc-explaining-cve-2019-5736/)
 - [CVE-2016-9962](https://bugzilla.suse.com/show_bug.cgi?id=1012568#c2) - access to a host file descriptor allows for breakout.
 
 ## Containerd CVEs
@@ -28,7 +30,11 @@ With Linux issues it can be a bit tricky to say if they're container escapes or 
 - [CVE-2022-0811](https://www.crowdstrike.com/blog/cr8escape-new-vulnerability-discovered-in-cri-o-container-engine-cve-2022-0811/) - Vulnerability in setting sysctls in k8s/OpenShift manifests allows for container breakout. Linked post has full PoC details.
 
 ## Docker CVEs
+
+- [CVE-2024-23653](https://snyk.io/blog/cve-2024-23653-buildkit-grpc-securitymode-privilege-check/) - missing privilege check in Docker BuildKit allowing for container escape when building an image using a malicious Dockerfile or upstream image (i.e. when using FROM)
+- [CVE-2024-23651](https://snyk.io/blog/cve-2024-23651-docker-buildkit-mount-cache-race/) - race condition in Docker BuildKit allowing for container escape when building an image using a malicious Dockerfile or upstream image (i.e. when using FROM)
 - [CVE-2021-21284](https://github.com/moby/moby/security/advisories/GHSA-7452-xqpj-6rpc) - When using user namespaces, a user with some access to the host filesystem can modify files which they should not have access to.
+- [CVE-2019-14271](https://unit42.paloaltonetworks.com/docker-patched-the-most-severe-copy-vulnerability-to-date-with-cve-2019-14271/) - An issue in the implementation of the Docker "cp" command can lead to full container escape when exploited by an attacker
 
 ## Kubernetes CVES
 - [CVE-2021-25741](https://groups.google.com/g/kubernetes-security-announce/c/nyfdhK24H7s) - race condition in when using hostPath volumes allows for privileged access to host filesystem
@@ -36,6 +42,9 @@ With Linux issues it can be a bit tricky to say if they're container escapes or 
 - [CVE-2017-1002101](https://github.com/kubernetes/kubernetes/issues/60813) - subpath volume mount handling allows arbitrary file access in host filesystem
 - [CVE-2017-1002102](https://github.com/kubernetes/kubernetes/issues/60814) - Arbitrary deletion of files on the host possible when using some Kubernetes volume types
 
+## Cloud provider tooling
+
+- [CVE-2021-3100, CVE-2021-3101, CVE-2022-0070, CVE-2022-0071](https://unit42.paloaltonetworks.com/aws-log4shell-hot-patch-vulnerabilities/) AWS' hot patch package for log4shell allowed for container escape, if a container contains a malicious "java" executable which will be run uncontainerized.
 
 ## Reference Links
 
