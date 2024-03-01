@@ -47,9 +47,11 @@ With Linux issues it can be a bit tricky to say if they're container escapes or 
 
 - [CVE-2021-3100, CVE-2021-3101, CVE-2022-0070, CVE-2022-0071](https://unit42.paloaltonetworks.com/aws-log4shell-hot-patch-vulnerabilities/) AWS' hot patch package for log4shell allowed for container escape, if a container contains a malicious "java" executable which will be run uncontainerized.
 
-## Papers
+## Additional resources related to escaping containers
 
-- [Cross Container Attacks: The Bewildered eBPF on Clouds (2023)](https://www.usenix.org/system/files/usenixsecurity23-he.pdf) describes how the `CAP_EBPF` permission can frequently be abused to escape containers.
+- [Cross Container Attacks: The Bewildered eBPF on Clouds (2023)](https://www.usenix.org/system/files/usenixsecurity23-he.pdf) describes how the `CAP_BPF+CAP_PERFMON` 
+ (or `CAP_SYS_ADMIN`) capabilities be abused to escape containers.
+- [Bad Pods: Kubernetes Pod Privilege Escalation](https://bishopfox.com/blog/kubernetes-pod-privilege-escalation) describes common scenarios of dangerous Kubernetes pod configurations, and how/if it's possible to escape in each case.
 
 ## Reference Links
 
