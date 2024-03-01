@@ -19,8 +19,9 @@ With Linux issues it can be a bit tricky to say if they're container escapes or 
 
 ## runc CVEs
 
-- [CVE-2024-21626](https://snyk.io/blog/leaky-vessels-docker-runc-container-breakout-vulnerabilities/) - a.k.a. Leaky Vessels, allows for container escape if running a malicious image, or building a malicious Dockerfile, directly, or indirectly (i.e. through a `FROM` instruction)
+- [CVE-2024-21626](https://snyk.io/blog/leaky-vessels-docker-runc-container-breakout-vulnerabilities/) - a.k.a. Leaky Vessels, allows for container escape if running a malicious image, or building a malicious Dockerfile, directly, or indirectly (i.e. through a `FROM` instruction).
 - [CVE-2021-30465](http://blog.champtar.fr/runc-symlink-CVE-2021-30465/) - race condition when mounting volumes into a container allows for host access.
+- [CVE-2019-19921](https://nvd.nist.gov/vuln/detail/CVE-2019-19921) - TOCTOU in runC's mount operations that allows to break out of the container.
 - [CVE-2019-5736](https://blog.dragonsector.pl/2019/02/cve-2019-5736-escape-from-docker-and.html) - overwrite runc binary on the host system at container start, see also [explanation](https://unit42.paloaltonetworks.com/breaking-docker-via-runc-explaining-cve-2019-5736/)
 - [CVE-2016-9962](https://bugzilla.suse.com/show_bug.cgi?id=1012568#c2) - access to a host file descriptor allows for breakout.
 
