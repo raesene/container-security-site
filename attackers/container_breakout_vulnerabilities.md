@@ -28,8 +28,10 @@ With Linux issues it can be a bit tricky to say if they're container escapes or 
 - [CVE-2022-23648](https://bugs.chromium.org/p/project-zero/issues/detail?id=2244) - Vuln in volume mounting allows for arbitrary file read from the underlying host, leading to likely indirect container breakout. PoC exploit [here](https://github.com/raesene/CVE-2022-23648-POC)
 
 ## CRI-O CVEs
-- [CVE-2022-0811](https://www.crowdstrike.com/blog/cr8escape-new-vulnerability-discovered-in-cri-o-container-engine-cve-2022-0811/) - Vulnerability in setting sysctls in k8s/OpenShift manifests allows for container breakout. Linked post has full PoC details.
 
+- [CVE-2022-0811](https://www.crowdstrike.com/blog/cr8escape-new-vulnerability-discovered-in-cri-o-container-engine-cve-2022-0811/) - Vulnerability in setting sysctls in k8s/OpenShift manifests allows for container breakout. Linked post has full PoC details.
+- [CVE-2019-14891](https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2019-14891) allows containers to access the host's network
+ 
 ## Docker CVEs
 
 - [CVE-2024-23653](https://snyk.io/blog/cve-2024-23653-buildkit-grpc-securitymode-privilege-check/) - missing privilege check in Docker BuildKit allowing for container escape when building an image using a malicious Dockerfile or upstream image (i.e. when using FROM)
