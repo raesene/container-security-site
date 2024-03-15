@@ -6,10 +6,7 @@ This is a list of open source tools which help with areas related to Container s
 
 Useful tools to run inside a container to assess the sandbox that's in use, and exploit some common breakout issues.
 
-* [amicontained](https://github.com/genuinetools/amicontained) -  will show you information about the container runtime and rights you have
-* [ConMachi](https://github.com/nccgroup/ConMachi/) - Pentester focused container attack surface assessment tool
 * [deepce](https://github.com/stealthcopter/deepce) - Docker Enumeration, Escalation of Privileges and Container Escapes 
-* [botb](https://github.com/brompwnie/botb) - Container breakout assessment tool. Can automatically exploit common issues like the Docker socket mount
 * [keyctl-unmask](https://github.com/antitree/keyctl-unmask) - Tool that specifically focuses on grabbing kernel keyring entries from containers that allow the keyctl syscall
 * [CDK](https://github.com/cdk-team/CDK) - Container and Kubernetes auditing and breakout tool.
 
@@ -62,9 +59,6 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 
 ### RBAC Assessment Tools
 
-* [kubectl-who-can](https://github.com/aquasecurity/kubectl-who-can) - Tool that lets you ask "who can" do things in RBAC, e.g. who can get secrets
-* [rakkess](https://github.com/corneliusweig/rakkess) - Shows the RBAC permissions available to a user as a list
-* [rback](https://github.com/team-soteria/rback) - tool for graphical representation of RBAC permissions in a kubernetes cluster
 * [rbac-tool](https://github.com/alcideio/rbac-tool) - RBAC Tool for Kubernetes
 * [kubiScan](https://github.com/cyberark/KubiScan) - Tool to scan Kubernetes clusters for risky permissions
 * [krane](https://github.com/appvia/krane) - Kubernetes RBAC static analysis & visualisation tool
@@ -85,7 +79,6 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 
 ### Kubernetes Penetration Testing Tools
 
-* [kube-hunter](https://github.com/aquasecurity/kube-hunter) - Tool to test and exploit standard Kubernetes Security Vulnerabilities
 * [kubestrike](https://github.com/vchinnipilli/kubestrike) - Security auditing tool for Kubernetes looks at Authenticated and unauthenticated scanning
 * [peirates](https://github.com/inguardians/peirates) - Kubernetes container breakout tool
 * [kdigger](https://github.com/quarkslab/kdigger) - Kubernetes breakout/discovery tool
@@ -96,6 +89,8 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [kubedagger](https://github.com/yasindce1998/KubeDagger) - Kubernetes offensive framework built in eBPF.
 * [MKAT](https://github.com/DataDog/managed-kubernetes-auditing-toolkit/) - Managed Kubernetes Auditing Tool. Focuses on exploring security issues in managed Kubernetes (e.g. EKS)
 * [Kubehound](https://kubehound.io/) - KubeHound creates a graph of attack paths in a Kubernetes cluster
+* [IceKube](https://github.com/WithSecureLabs/IceKube) - Kubernetes attack path evaluation tool.
+* [namespacehound](https://github.com/wiz-sec-public/namespacehound/) - Tool to test a cluster for possible namespace breakouts where multi-tenancy is in use.
 
 ### Kubernetes Post-Exploitation Tools
 
@@ -134,3 +129,16 @@ If you're looking to practice with some of the tools here, in a safe environment
 
 * [Security Profiles Operator](https://github.com/kubernetes-sigs/security-profiles-operator) - Kubernetes operator for security profiles
 * [hardeneks](https://github.com/aws-samples/hardeneks) - Tool to harden EKS clusters
+
+
+# Deprecated/Unmaintained Tools
+
+Inevitably over time, some tools will become unmaintained and deprecated. Whilst they may still work ok, caution is needed. If I've listed you here and you're not deprecated just open an issue to move it back :)
+
+* [kube-hunter](https://github.com/aquasecurity/kube-hunter) - Tool to test and exploit standard Kubernetes Security Vulnerabilities
+* [kubectl-who-can](https://github.com/aquasecurity/kubectl-who-can) - Tool that lets you ask "who can" do things in RBAC, e.g. who can get secrets
+* [rakkess](https://github.com/corneliusweig/rakkess) - Shows the RBAC permissions available to a user as a list
+* [rback](https://github.com/team-soteria/rback) - tool for graphical representation of RBAC permissions in a kubernetes cluster
+* [amicontained](https://github.com/genuinetools/amicontained) -  will show you information about the container runtime and rights you have
+* [ConMachi](https://github.com/nccgroup/ConMachi/) - Pentester focused container attack surface assessment tool
+* [botb](https://github.com/brompwnie/botb) - Container breakout assessment tool. Can automatically exploit common issues like the Docker socket mount
