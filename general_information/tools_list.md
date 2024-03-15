@@ -7,7 +7,6 @@ This is a list of open source tools which help with areas related to Container s
 Useful tools to run inside a container to assess the sandbox that's in use, and exploit some common breakout issues.
 
 * [deepce](https://github.com/stealthcopter/deepce) - Docker Enumeration, Escalation of Privileges and Container Escapes 
-* [keyctl-unmask](https://github.com/antitree/keyctl-unmask) - Tool that specifically focuses on grabbing kernel keyring entries from containers that allow the keyctl syscall
 * [CDK](https://github.com/cdk-team/CDK) - Container and Kubernetes auditing and breakout tool.
 
 ## Container Vulnerability Scanning Tools
@@ -43,17 +42,14 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 
 ## Container Registry Tools
 
-* [reg](https://github.com/genuinetools/reg) - Tool for interacting with Container registries
 * [regclient](https://github.com/regclient/regclient) - Another tool for interacting with container registries
 * [crane](https://github.com/google/go-containerregistry) - Tool for interacting with Container registries.
 * [skopeo](https://github.com/containers/skopeo) - Tool for interaction with Container registries
-* [go-pillage-registries](https://github.com/nccgroup/go-pillage-registries) - Tool to search the manifests and configuration for images in a registry for potentially sensitive information
+
 
 ## Container Image Tools
 
 * [Dive](https://github.com/wagoodman/dive) - Tool for exploring Container image layers
-* [Whaler](https://github.com/P3GLEG/Whaler) - Tool to reverse Docker images into Dockerfiles.
-
 
 ## Kubernetes Tools
 
@@ -62,7 +58,6 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [rbac-tool](https://github.com/alcideio/rbac-tool) - RBAC Tool for Kubernetes
 * [kubiScan](https://github.com/cyberark/KubiScan) - Tool to scan Kubernetes clusters for risky permissions
 * [krane](https://github.com/appvia/krane) - Kubernetes RBAC static analysis & visualisation tool
-* [RBAC Police](https://github.com/PaloAltoNetworks/rbac-police) - RBAC policy evaluation.
 * [eathar](https://github.com/raesene/eathar) - Kubernetes security assessment tool focusing on workload security and RBAC.
 
 ### Kubernetes Security Auditing Tools
@@ -79,23 +74,14 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 
 ### Kubernetes Penetration Testing Tools
 
-* [kubestrike](https://github.com/vchinnipilli/kubestrike) - Security auditing tool for Kubernetes looks at Authenticated and unauthenticated scanning
 * [peirates](https://github.com/inguardians/peirates) - Kubernetes container breakout tool
 * [kdigger](https://github.com/quarkslab/kdigger) - Kubernetes breakout/discovery tool
 * [teisteanas](https://github.com/raesene/teisteanas) - Tool to create kubeconfig files based on the CertificateSigningRequest API.
 * [tòcan](https://github.com/raesene/tocan) - Tool to create kubeconfig files based on the TokenRequest API.
-* [kubestroyer](https://github.com/Rolix44/Kubestroyer) - Kubernetes pentesting tool.
-* [kubestalk](https://github.com/redhuntlabs/kubestalk) - Black Box Kubernetes Pentesting Tool.
-* [kubedagger](https://github.com/yasindce1998/KubeDagger) - Kubernetes offensive framework built in eBPF.
 * [MKAT](https://github.com/DataDog/managed-kubernetes-auditing-toolkit/) - Managed Kubernetes Auditing Tool. Focuses on exploring security issues in managed Kubernetes (e.g. EKS)
 * [Kubehound](https://kubehound.io/) - KubeHound creates a graph of attack paths in a Kubernetes cluster
 * [IceKube](https://github.com/WithSecureLabs/IceKube) - Kubernetes attack path evaluation tool.
 * [namespacehound](https://github.com/wiz-sec-public/namespacehound/) - Tool to test a cluster for possible namespace breakouts where multi-tenancy is in use.
-
-### Kubernetes Post-Exploitation Tools
-
-* [kubesploit](https://github.com/cyberark/kubesploit) - Kubesploit is a cross-platform post-exploitation HTTP/2 Command & Control server and agent written in Golang, focused on containerized environments
-
 
 ### Kubelet Tools
 
@@ -121,7 +107,6 @@ If you're looking to practice with some of the tools here, in a safe environment
 
 ### Kubernetes Honeypot projects
 
-* [k8spot](https://github.com/Maddosaurus/k8spot) - Kubernetes honeypot.
 * [Helix Honeypot](https://github.com/Zeerg/helix-honeypot) - Kubernetes API server honeypot
 * [Kubernetes Honeytokens](https://blog.thinkst.com/2021/11/a-kubeconfig-canarytoken.html) - A honey token Canary for use with honeypots.
 
@@ -129,7 +114,6 @@ If you're looking to practice with some of the tools here, in a safe environment
 
 * [Security Profiles Operator](https://github.com/kubernetes-sigs/security-profiles-operator) - Kubernetes operator for security profiles
 * [hardeneks](https://github.com/aws-samples/hardeneks) - Tool to harden EKS clusters
-
 
 # Deprecated/Unmaintained Tools
 
@@ -142,3 +126,14 @@ Inevitably over time, some tools will become unmaintained and deprecated. Whilst
 * [amicontained](https://github.com/genuinetools/amicontained) -  will show you information about the container runtime and rights you have
 * [ConMachi](https://github.com/nccgroup/ConMachi/) - Pentester focused container attack surface assessment tool
 * [botb](https://github.com/brompwnie/botb) - Container breakout assessment tool. Can automatically exploit common issues like the Docker socket mount
+* [keyctl-unmask](https://github.com/antitree/keyctl-unmask) - Tool that specifically focuses on grabbing kernel keyring entries from containers that allow the keyctl syscall
+* [go-pillage-registries](https://github.com/nccgroup/go-pillage-registries) - Tool to search the manifests and configuration for images in a registry for potentially sensitive information
+* [reg](https://github.com/genuinetools/reg) - Tool for interacting with Container registries
+* [Whaler](https://github.com/P3GLEG/Whaler) - Tool to reverse Docker images into Dockerfiles.
+* [RBAC Police](https://github.com/PaloAltoNetworks/rbac-police) - RBAC policy evaluation.
+* [kubestrike](https://github.com/vchinnipilli/kubestrike) - Security auditing tool for Kubernetes looks at Authenticated and unauthenticated scanning
+* [kubestroyer](https://github.com/Rolix44/Kubestroyer) - Kubernetes pentesting tool.
+* [kubestalk](https://github.com/redhuntlabs/kubestalk) - Black Box Kubernetes Pentesting Tool.
+* [kubedagger](https://github.com/yasindce1998/KubeDagger) - Kubernetes offensive framework built in eBPF.
+* [kubesploit](https://github.com/cyberark/kubesploit) - Kubesploit is a cross-platform post-exploitation HTTP/2 Command & Control server and agent written in Golang, focused on containerized environments
+* [k8spot](https://github.com/Maddosaurus/k8spot) - Kubernetes honeypot.
