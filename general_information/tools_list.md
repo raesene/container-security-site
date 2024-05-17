@@ -82,6 +82,7 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [Kubehound](https://kubehound.io/) - KubeHound creates a graph of attack paths in a Kubernetes cluster
 * [IceKube](https://github.com/WithSecureLabs/IceKube) - Kubernetes attack path evaluation tool.
 * [namespacehound](https://github.com/wiz-sec-public/namespacehound/) - Tool to test a cluster for possible namespace breakouts where multi-tenancy is in use.
+* [MTKPI](https://github.com/r0binak/MTKPI) – Multi Tool Kubernetes Pentest Image
 
 ### Kubelet Tools
 
