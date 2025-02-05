@@ -24,8 +24,7 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 * [Checkov](https://github.com/bridgecrewio/checkov) - IaC scanner
 * [KICS](https://github.com/Checkmarx/kics) - IaC scanner
 * [dep-scan](https://github.com/AppThreat/dep-scan) - Vulnerability and mis-configuration scanner
-* [Terrascan](https://github.com/tenable/terrascan) - IAC Scanner for various formats including Docker and Kubernetes
-* [hadolint](https://github.com/hadolint/hadolint) - Docker file linter
+
 
 ## Docker Security Tools
 
@@ -64,7 +63,6 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 
 * [kube-bench](https://github.com/aquasecurity/kube-bench) - Tool to assess compliance with the CIS benchmark for various Kubernetes distributions
 * [kubescape](https://github.com/armosec/kubescape) - Kubernetes security assessment tool
-* [kubeaudit](https://github.com/Shopify/kubeaudit) - Kubernetes security assessment tool focusing on workload security
 * [kubesec](https://github.com/controlplaneio/kubesec) - Kubernetes security assessment tool focusing on workload security
 * [kubescore](https://github.com/zegl/kube-score) - Kubernetes security and reliability assessment tool focusing on workload security.
 * [eathar](https://github.com/raesene/eathar) - Kubernetes security assessment tool focusing on workload security and RBAC.
@@ -75,7 +73,6 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 ### Kubernetes Penetration Testing Tools
 
 * [peirates](https://github.com/inguardians/peirates) - Kubernetes container breakout tool
-* [kdigger](https://github.com/quarkslab/kdigger) - Kubernetes breakout/discovery tool
 * [teisteanas](https://github.com/raesene/teisteanas) - Tool to create kubeconfig files based on the CertificateSigningRequest API.
 * [tòcan](https://github.com/raesene/tocan) - Tool to create kubeconfig files based on the TokenRequest API.
 * [MKAT](https://github.com/DataDog/managed-kubernetes-auditing-toolkit/) - Managed Kubernetes Auditing Tool. Focuses on exploring security issues in managed Kubernetes (e.g. EKS)
@@ -87,10 +84,6 @@ Useful tools to run inside a container to assess the sandbox that's in use, and 
 
 * [kubeletctl](https://github.com/cyberark/kubeletctl) - This is a good tool to automate the process of assessing a kubelet instance. If the instance is vulnerable it can also carry out some exploit tasks
 * [kubelet dumper](https://github.com/raesene/kubelet_dumper) - PoC tool to dump Kubelet configurations for review.
-
-### etcd Tools
-
-* [auger](https://github.com/jpbetz/auger) - Tool for decoding information pulled directly from the etcd database
 
 ### Security Observability Tools
 
@@ -137,3 +130,8 @@ Inevitably over time, some tools will become unmaintained and deprecated. Whilst
 * [kubedagger](https://github.com/yasindce1998/KubeDagger) - Kubernetes offensive framework built in eBPF.
 * [kubesploit](https://github.com/cyberark/kubesploit) - Kubesploit is a cross-platform post-exploitation HTTP/2 Command & Control server and agent written in Golang, focused on containerized environments
 * [k8spot](https://github.com/Maddosaurus/k8spot) - Kubernetes honeypot.
+* [Terrascan](https://github.com/tenable/terrascan) - IAC Scanner for various formats including Docker and Kubernetes
+* [hadolint](https://github.com/hadolint/hadolint) - Docker file linter
+* [kubeaudit](https://github.com/Shopify/kubeaudit) - Kubernetes security assessment tool focusing on workload security
+* [kdigger](https://github.com/quarkslab/kdigger) - Kubernetes breakout/discovery tool
+* [auger](https://github.com/jpbetz/auger) - Tool for decoding information pulled directly from the etcd database
