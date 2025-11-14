@@ -2,7 +2,7 @@
 
 There are a number of sets of guidance which are provided by various bodies and can be useful in understanding how to secure container environments. Generally speaking, they fall into two categories, Compliance standards and hardening guides. The difference is that compliance standards generally seek to give precise recommendations at the level of setting specific parameters and file permissions for a specific product, where hardening guides tend to cover more ground at a higher level Whilst hardening guides may have some specific details, they don't try to comprehensively cover all settings related to security in one product.
 
-## Complaince standards
+## Compliance standards
 
 - [CIS Benchmark for Kubernetes](https://www.cisecurity.org/benchmark/kubernetes) - There are benchmarks for a number of distributions. The main one covers Kubeadm and there are also benchmarks for EKS, AKS, GKE, OpenShift, ACK and OKE.
 - [CIS Benchmark for Docker](https://www.cisecurity.org/benchmark/docker) - Worth noting that this specifically relates to Docker as a stand alone container engine, some of the recommendations will not apply when it's used as part of a Kubernetes cluster.

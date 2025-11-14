@@ -1,5 +1,7 @@
 # Container CVE List
 
+**NB** This isn't actively maintained, but present for historical reference. The official CVE feed for Kubernetes and the project feeds for the other projects are the best places to get up to date CVE information.
+
 ## Kubernetes
 
 There is now an officially maintained list for Kubernetes Security vulnerabilities [here](https://kubernetes.io/docs/reference/issues-security/official-cve-feed/), I'll continue to maintain the list below for additional info links, but in general the official list is the best place for the latest vulns.
