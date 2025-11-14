@@ -64,7 +64,7 @@ caddy.pwndland.uk:81/image:test": failed to do request: Head "https://caddy.pwnd
 
 ### Pod Readiness Probes
 
-Another possible Node SSRF vector comes from pod readiness probes. This was first noted in [this GitHub issue from 2021](https://github.com/kubernetes/kubernetes/issues/99425). Whilst the vector is blind SSRF, it does allow some more flexibility than pod images, in that it allows for headers to be specified and specific paths to be targeted.
+Another possible Node SSRF vector comes from pod readiness probes. This was first noted in [this GitHub issue from 2021](https://github.com/kubernetes/kubernetes/issues/99425). Whilst the vector is blind SSRF, it does allow some more flexibility than pod images, in that it allows for headers to be specified and specific paths to be targeted. It's worth noting this can also be done with [container lifecycle hooks](https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/)
 
 From that issue a sample pod definition would look like
 
