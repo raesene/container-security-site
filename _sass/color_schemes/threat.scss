@@ -1,0 +1,161 @@
+// ═══════════════════════════════════════════════════════
+//  THREAT — Security Operations Center dashboard
+//  Aesthetic: Dark navy, electric cyan, Orbitron headers
+//  Think: threat intelligence platform, SOC monitor wall
+// ═══════════════════════════════════════════════════════
+
+$body-background-color:     #06090f;
+$sidebar-color:             #080d18;
+$search-background-color:   #0c1424;
+$table-background-color:    #080d18;
+$code-background-color:     #0c1424;
+$feedback-color:            #0a1220;
+$border-color:              #142240;
+$body-text-color:           #a8c8e0;
+$body-heading-color:        #00d4ff;
+$nav-child-link-color:      #5878a0;
+$link-color:                #00b8e0;
+$btn-primary-color:         #0096c8;
+$base-button-color:         #0c1424;
+$body-font-family:          "Exo 2", "Segoe UI", sans-serif;
+$mono-font-family:          "Source Code Pro", "Courier New", monospace;
+
+// ─── Subtle grid background on sidebar ──────────────────
+.side-bar {
+  background-image:
+    linear-gradient(rgba(0, 212, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.03) 1px, transparent 1px) !important;
+  background-size: 32px 32px !important;
+}
+
+// ─── Orbitron headings ──────────────────────────────────
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.site-title {
+  font-family: "Orbitron", "Exo 2", sans-serif !important;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.main-content h1 {
+  color: #00d4ff;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.main-content h2 {
+  color: #00b8e0;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+
+  &::before {
+    content: "// ";
+    color: rgba(0, 212, 255, 0.3);
+    font-family: $mono-font-family;
+    font-size: 0.85em;
+  }
+}
+
+// ─── Site title ─────────────────────────────────────────
+.site-title {
+  font-size: 0.75rem !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+  color: #00d4ff !important;
+}
+
+// ─── Status bar accent on header ────────────────────────
+.main-header {
+  border-bottom: 1px solid rgba(0, 212, 255, 0.15) !important;
+  background: linear-gradient(180deg, #080d18 0%, $body-background-color 100%) !important;
+}
+
+// ─── Active nav item highlight ──────────────────────────
+.nav-list-link.active {
+  background: linear-gradient(90deg, rgba(0, 212, 255, 0.12), transparent) !important;
+  border-left: 2px solid #00d4ff !important;
+  color: #00d4ff !important;
+}
+
+.nav-list-link:hover {
+  color: #00d4ff !important;
+  background: rgba(0, 212, 255, 0.06) !important;
+}
+
+// ─── Code block with "PAYLOAD" header ───────────────────
+div.highlighter-rouge {
+  border: 1px solid $border-color;
+  border-top: 2px solid rgba(0, 212, 255, 0.4);
+
+  &::before {
+    content: "◈  OUTPUT";
+    display: block;
+    padding: 4px 12px;
+    background: linear-gradient(90deg, #0c1424, #06090f);
+    color: rgba(0, 212, 255, 0.5);
+    font-family: "Orbitron", $mono-font-family;
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+// ─── Table with severity-style theming ──────────────────
+table {
+  border: 1px solid $border-color !important;
+
+  th {
+    background: linear-gradient(180deg, #0c1424, #080d18) !important;
+    color: #00d4ff !important;
+    font-family: "Orbitron", sans-serif !important;
+    font-size: 0.65rem !important;
+    letter-spacing: 0.15em !important;
+    text-transform: uppercase !important;
+    border-bottom: 2px solid rgba(0, 212, 255, 0.4) !important;
+  }
+
+  td {
+    border-color: rgba(20, 34, 64, 0.8) !important;
+  }
+
+  tr:hover td {
+    background-color: rgba(0, 184, 224, 0.06) !important;
+  }
+}
+
+// ─── Sidebar footer ─────────────────────────────────────
+.site-footer {
+  border-top: 1px solid $border-color;
+  font-size: 0.65rem !important;
+  letter-spacing: 0.05em;
+  opacity: 0.5;
+}
+
+// ─── Search ─────────────────────────────────────────────
+.search-input {
+  border: 1px solid $border-color !important;
+  caret-color: #00d4ff;
+
+  &::placeholder {
+    color: rgba(0, 212, 255, 0.2) !important;
+  }
+
+  &:focus {
+    border-color: rgba(0, 212, 255, 0.4) !important;
+    box-shadow: 0 0 0 2px rgba(0, 212, 255, 0.08) !important;
+  }
+}
+
+// ─── Link transitions ───────────────────────────────────
+a {
+  transition: color 0.15s ease;
+}
+
+// ─── Scrollbar ──────────────────────────────────────────
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: $body-background-color; }
+::-webkit-scrollbar-thumb { background: $border-color; }
+::-webkit-scrollbar-thumb:hover { background: rgba(0, 212, 255, 0.4); }

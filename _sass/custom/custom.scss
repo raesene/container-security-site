@@ -1,0 +1,65 @@
+// ═══════════════════════════════════════════════════════
+//  Shared custom overrides — applied across all themes
+// ═══════════════════════════════════════════════════════
+
+// ─── Better heading anchor links ────────────────────────
+.main-content .anchor-heading {
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.main-content h1:hover .anchor-heading,
+.main-content h2:hover .anchor-heading,
+.main-content h3:hover .anchor-heading {
+  opacity: 1;
+}
+
+// ─── Smooth nav link transitions ────────────────────────
+.nav-list-link {
+  transition: color 0.15s ease, background-color 0.15s ease, padding-left 0.15s ease;
+}
+
+// ─── Better table wrapper scrolling ─────────────────────
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 2px;
+}
+
+// ─── Better list bullets in content ─────────────────────
+.main-content ul > li::before {
+  content: "▸" !important;
+  font-size: 0.7em !important;
+  vertical-align: 1px;
+}
+
+// ─── Tighter line-height for nav items ──────────────────
+.nav-list-link {
+  line-height: 1.4;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+// ─── Aux nav button ─────────────────────────────────────
+.aux-nav-list-item .site-button {
+  font-size: 0.78rem !important;
+  letter-spacing: 0.02em;
+  transition: opacity 0.15s ease;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+// ─── Better inline code ─────────────────────────────────
+.main-content code:not(.highlight code) {
+  font-size: 0.875em;
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+  font-family: $mono-font-family;
+}
+
+// ─── Search results ─────────────────────────────────────
+.search-results-list-item {
+  transition: background-color 0.1s ease;
+}

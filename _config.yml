@@ -8,3 +8,12 @@ ga_tracking: G-CRQ9HG0N7J
 aux_links:
   "Edit on GitHub":
     - "https://github.com/raesene/container-security-site"
+
+# ─── Custom Theme ────────────────────────────────────────
+# Available themes:
+#   terminal   — phosphor green on near-black, IBM Plex Mono, CRT scanlines
+#   threat     — SOC dashboard dark navy + electric cyan, Orbitron headers
+#   classified — parchment/cream document aesthetic, Playfair Display, red accents
+#
+# To switch: change the value below and rebuild the site
+color_scheme: threat 

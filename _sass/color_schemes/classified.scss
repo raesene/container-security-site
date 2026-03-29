@@ -1,0 +1,201 @@
+// ═══════════════════════════════════════════════════════
+//  CLASSIFIED — Official security document aesthetic
+//  Aesthetic: Parchment/cream, Playfair Display, red stamps
+//  Think: NSA internal briefing, government tech manual
+// ═══════════════════════════════════════════════════════
+
+$body-background-color:     #f5f1e8;
+$sidebar-color:             #ebe7de;
+$search-background-color:   #f8f5f0;
+$table-background-color:    #ede9e0;
+$code-background-color:     #e4dfd4;
+$feedback-color:            #e8e4da;
+$border-color:              #c8c0b0;
+$body-text-color:           #2a2820;
+$body-heading-color:        #1a1610;
+$nav-child-link-color:      #6a6050;
+$link-color:                #9a1515;
+$btn-primary-color:         #9a1515;
+$base-button-color:         #e4dfd4;
+$body-font-family:          "IBM Plex Sans", "Georgia", serif;
+$mono-font-family:          "Courier Prime", "Courier New", monospace;
+
+// ─── Noise/paper texture on body ────────────────────────
+body {
+  background-image:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+// ─── Sidebar paper texture ──────────────────────────────
+.side-bar {
+  border-right: 2px solid $border-color !important;
+}
+
+// ─── Playfair Display for all headings ──────────────────
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4 {
+  font-family: "Playfair Display", "Georgia", serif !important;
+  font-weight: 700;
+  color: $body-heading-color;
+  letter-spacing: 0.01em;
+}
+
+.main-content h1 {
+  font-size: 2rem;
+  border-bottom: 2px solid $border-color;
+  padding-bottom: 0.6rem;
+  margin-bottom: 1.4rem;
+
+  // "RESTRICTED" stamp style badge before major headings
+  &::before {
+    content: "◼";
+    display: inline-block;
+    color: #9a1515;
+    margin-right: 0.5rem;
+    font-size: 0.6em;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+  }
+}
+
+.main-content h2 {
+  font-size: 1.4rem;
+  border-bottom: 1px solid rgba(200, 192, 176, 0.6);
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+}
+
+// ─── Site title — classified look ───────────────────────
+.site-title {
+  font-family: "Playfair Display", serif !important;
+  font-size: 1.05rem !important;
+  letter-spacing: 0.02em;
+  color: $body-heading-color !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+  border-bottom: 2px solid #9a1515;
+  padding-bottom: 4px;
+}
+
+// ─── Navigation ─────────────────────────────────────────
+.nav-list-link {
+  font-size: 0.82rem;
+  letter-spacing: 0.01em;
+
+  &:hover {
+    color: #9a1515 !important;
+  }
+
+  &.active {
+    color: #9a1515 !important;
+    font-weight: 600;
+    border-left: 2px solid #9a1515 !important;
+    background: rgba(154, 21, 21, 0.04) !important;
+  }
+}
+
+// ─── Code blocks — typewriter style ─────────────────────
+div.highlighter-rouge {
+  border: 1px solid $border-color;
+  border-left: 3px solid $border-color;
+  background: $code-background-color;
+
+  &::before {
+    content: "CODE";
+    display: block;
+    padding: 4px 12px;
+    background: $border-color;
+    color: rgba(26, 22, 16, 0.5);
+    font-family: $mono-font-family;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(200, 192, 176, 0.6);
+  }
+}
+
+// ─── Blockquotes — official citation style ──────────────
+blockquote {
+  border-left: 3px solid $border-color;
+  background: rgba(200, 192, 176, 0.15);
+  padding: 0.8rem 1.2rem;
+  font-style: italic;
+  color: #5a5040;
+
+  &::before {
+    content: "\201C";
+    font-size: 2.5rem;
+    font-family: "Playfair Display", serif;
+    color: $border-color;
+    line-height: 0;
+    vertical-align: -0.6rem;
+    margin-right: 0.2rem;
+  }
+}
+
+// ─── Tables — briefing document style ───────────────────
+table {
+  border: 1px solid $border-color !important;
+  font-size: 0.85rem;
+
+  th {
+    background: #1a1610 !important;
+    color: #f5f1e8 !important;
+    font-family: "Playfair Display", serif !important;
+    letter-spacing: 0.04em !important;
+    font-weight: 700 !important;
+    font-size: 0.78rem !important;
+  }
+
+  tr:nth-child(even) {
+    background-color: rgba(200, 192, 176, 0.15) !important;
+  }
+
+  tr:hover td {
+    background-color: rgba(154, 21, 21, 0.04) !important;
+  }
+
+  td {
+    border-color: rgba(200, 192, 176, 0.5) !important;
+  }
+}
+
+// ─── Red link hover ──────────────────────────────────────
+.main-content a:hover {
+  color: darken(#9a1515, 10%);
+  text-decoration: underline;
+}
+
+// ─── Search ─────────────────────────────────────────────
+.search-input {
+  border: 1px solid $border-color !important;
+
+  &:focus {
+    border-color: rgba(154, 21, 21, 0.4) !important;
+    box-shadow: 0 0 0 2px rgba(154, 21, 21, 0.08) !important;
+  }
+}
+
+// ─── Footer ─────────────────────────────────────────────
+.site-footer {
+  border-top: 1px solid $border-color;
+  font-size: 0.7rem !important;
+  color: $nav-child-link-color !important;
+  font-style: italic;
+}
+
+// ─── Horizontal rules ───────────────────────────────────
+hr {
+  border: none;
+  border-top: 1px solid $border-color;
+  margin: 2rem 0;
+}
+
+// ─── Scrollbar ──────────────────────────────────────────
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: $body-background-color; }
+::-webkit-scrollbar-thumb { background: $border-color; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #9a1515; }

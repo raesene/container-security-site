@@ -1,0 +1,118 @@
+// ═══════════════════════════════════════════════════════
+//  TERMINAL — Phosphor green on near-black
+//  Aesthetic: CRT monitor, hacker terminal, phosphor glow
+// ═══════════════════════════════════════════════════════
+
+$body-background-color:     #080c08;
+$sidebar-color:             #0b0f0b;
+$search-background-color:   #0f150f;
+$table-background-color:    #0b0f0b;
+$code-background-color:     #0f150f;
+$feedback-color:            #0d130d;
+$border-color:              #1c3a1c;
+$body-text-color:           #7ab87a;
+$body-heading-color:        #39ff14;
+$nav-child-link-color:      #4a8a4a;
+$link-color:                #2dd62d;
+$btn-primary-color:         #39ff14;
+$base-button-color:         #0f150f;
+$body-font-family:          "IBM Plex Mono", "Courier New", monospace;
+$mono-font-family:          "IBM Plex Mono", "Courier New", monospace;
+
+// ─── CRT Scanline overlay ───────────────────────────────
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(0, 0, 0, 0.08) 3px,
+    rgba(0, 0, 0, 0.08) 4px
+  );
+}
+
+// ─── Phosphor glow on headings ──────────────────────────
+.main-content h1,
+.main-content h2,
+.main-content h3 {
+  text-shadow: 0 0 8px rgba(57, 255, 20, 0.6), 0 0 20px rgba(57, 255, 20, 0.2);
+  letter-spacing: 0.04em;
+}
+
+// ─── Site title glow ────────────────────────────────────
+.site-title {
+  text-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 700 !important;
+}
+
+// ─── Prompt prefix on nav links ─────────────────────────
+.nav-list > .nav-list-item > .nav-list-link::before {
+  content: "> ";
+  opacity: 0.5;
+}
+
+.nav-list > .nav-list-item > .nav-list-link:hover::before,
+.nav-list > .nav-list-item > .nav-list-link.active::before {
+  opacity: 1;
+  color: $body-heading-color;
+}
+
+// ─── Search input styling ───────────────────────────────
+.search-input {
+  border: 1px solid $border-color !important;
+  caret-color: $body-heading-color;
+
+  &::placeholder {
+    color: rgba(57, 255, 20, 0.25) !important;
+  }
+}
+
+// ─── Code block terminal header ─────────────────────────
+div.highlighter-rouge {
+  position: relative;
+  border: 1px solid $border-color;
+
+  &::before {
+    content: "● ● ●  terminal";
+    display: block;
+    padding: 4px 12px;
+    background: $border-color;
+    color: rgba(57, 255, 20, 0.5);
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    font-family: $mono-font-family;
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+// ─── Table styling ──────────────────────────────────────
+table th {
+  background-color: $border-color !important;
+  color: $body-heading-color !important;
+  text-shadow: 0 0 6px rgba(57, 255, 20, 0.4);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.72rem !important;
+  border-bottom: 2px solid $link-color !important;
+}
+
+table tr:hover {
+  background-color: rgba(57, 255, 20, 0.04) !important;
+}
+
+// ─── Link hover effect ──────────────────────────────────
+.main-content a:hover {
+  text-shadow: 0 0 6px rgba(45, 214, 45, 0.5);
+}
+
+// ─── Scrollbar ──────────────────────────────────────────
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: $body-background-color; }
+::-webkit-scrollbar-thumb { background: $border-color; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: $link-color; }
