@@ -105,6 +105,7 @@ This is a list of more in-depth articles than can be worth reading to get a bett
 
 - [Post on how to implement a replacement for kube-proxy](https://arthurchiao.art/blog/cracking-k8s-node-proxy/)
 - [Post on how Kubernetes service traffic direction is done](https://dustinspecker.com/posts/iptables-how-kubernetes-services-direct-traffic-to-pods/)
+- [A comprehensive kubernetes networking guide](https://www.tkng.io/)
 
 ## Kubernetes Security
 
