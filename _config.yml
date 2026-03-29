@@ -3,7 +3,7 @@ plugins:
   - jekyll-feed
 title: [container-security site]
 description: [A site about container security]
-logo: "images/logo.png"
+logo: "images/newlogo.png"
 ga_tracking: G-CRQ9HG0N7J
 aux_links:
   "Edit on GitHub":
