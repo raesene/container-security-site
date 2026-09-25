@@ -1,5 +1,13 @@
 # Container Security Site
 
+<div class="hero">
+  <img class="hero-image" src="images/hero-cathode.jpg" alt="Wireframe drawing of shipping containers stacked in a server rack, with one container's doors standing open">
+  <div class="hero-text">
+    <p class="hero-label">// container &amp; kubernetes security</p>
+    <p class="hero-tagline">Checklists, CVEs, tools and research for attackers and defenders.</p>
+  </div>
+</div>
+
 This is a site with some container security resources. It is (and probably always will be) a work in progress, but hopefully you'll find some useful information. Issues and PRs welcome [on GitHub](https://github.com/raesene/container-security-site).
 
 ## General Information

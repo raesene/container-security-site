@@ -7,7 +7,7 @@
 There is now an officially maintained list for Kubernetes Security vulnerabilities [here](https://kubernetes.io/docs/reference/issues-security/official-cve-feed/), I'll continue to maintain the list below for additional info links, but in general the official list is the best place for the latest vulns.
 
 |CVE-ID   |CVSS Score   |Title   |Affected Versions   | Patched Versions | More info |
-|---|---|---|---|---|
+|---|---|---|---|---|---|
 | [CVE-2023-5528](https://nvd.nist.gov/vuln/detail/CVE-2023-5528)| 7.2 | Privilege escalation on Windows nodes via in-tree storage plugin     |   |   |   |
 | [CVE-2023-3955](https://nvd.nist.gov/vuln/detail/CVE-2023-3955) | 8.8 | Privilege escalation on Windows nodes due to insufficient input sanitization |   |   |   |
 | [CVE-2023-3893](https://nvd.nist.gov/vuln/detail/CVE-2023-3893) | 8.8 | Privilege escalation via kubernetes-csi-proxy on Windows nodes      |   |   |   |
@@ -51,6 +51,7 @@ There is now an officially maintained list for Kubernetes Security vulnerabiliti
 ## runc
 
 |CVE-ID   |CVSS Score   |Title   |Affected Versions   | Patched Versions | More Info |
+|---|---|---|---|---|---|
 |[CVE-2024-21626](https://github.com/opencontainers/runc/security/advisories/GHSA-xr7r-f8xq-vfvv)|8.6| several container breakouts due to internally leaked fds|>=v1.0.0-rc93,<=1.1.11|1.1.12|[Withsecure Write-up](https://labs.withsecure.com/publications/runc-working-directory-breakout--cve-2024-21626) |
 |[CVE-2022-29162](https://github.com/opencontainers/runc/security/advisories/GHSA-f3fp-gc8g-vw66) | 7.8 | Default inheritable capabilities for linux container should be empty | < 1.1.2 | 1.1.2 | |
 |[CVE-2021-43784](https://github.com/opencontainers/runc/security/advisories/GHSA-v95c-p5hm-xq8f) | 5.0 |Overflow in netlink bytemsg length field allows attacker to override netlink-based container configuration  | <1.0.3 | 1.0.3 | |
@@ -63,6 +64,7 @@ There is now an officially maintained list for Kubernetes Security vulnerabiliti
 ## ContainerD
 
 |CVE-ID   |CVSS Score   |Title   |Affected Versions   | Patched Versions | More Info |
+|---|---|---|---|---|---|
 | [CVE-2023-25153](https://github.com/containerd/containerd/security/advisories/GHSA-259w-8hf6-59c2) | 5.5 | OCI image importer memory exhaustion | <= 1.5.17, 1.6.0-1.6.17 | 1.5.18, 1.6.18 |  |
 | [CVE-2023-25173](https://github.com/containerd/containerd/security/advisories/GHSA-hmfx-3pcx-653p) | 5.5 | Supplementary groups are not set up properly | <= 1.5.17, 1.6.0-1.6.17 | 1.5.18, 1.6.18 |  |
 | [CVE-2022-23471](https://github.com/containerd/containerd/security/advisories/GHSA-2qjp-425j-52j9) | 5.7 | containerd CRI stream server: Host memory exhaustion through Terminal resize goroutine leak | < 1.5.16, 1.6.0-1.6.11 | 1.5.16, 1.6.12 |  |
@@ -80,6 +82,7 @@ There is now an officially maintained list for Kubernetes Security vulnerabiliti
 ## Docker
 
 |CVE-ID   |CVSS Score   |Title   |Affected Versions   | Patched Versions | More Info |
+|---|---|---|---|---|---|
 | [CVE-2022-36109](https://github.com/moby/moby/security/advisories/GHSA-rc4r-wh2q-q6c4) | 6.3 | Security vulnerability relating to supplementary group permissions | < 20.10.18 | 20.10.18  |   |
 | [CVE-2021-41190](https://github.com/moby/moby/security/advisories/GHSA-xmmx-7jpf-fx42) | 5.0 | Ambiguous OCI manifest parsing | < 20.10.11 | 20.10.11  |   |
 | [CVE-2021-41091](https://github.com/moby/moby/security/advisories/GHSA-3fwx-pjgw-3558) | 6.3 | Insufficiently restricted permissions on data directory | < 20.10.9 | 20.10.9  | [Cyberark blog post](https://www.cyberark.com/resources/threat-research-blog/how-docker-made-me-more-capable-and-the-host-less-secure)   |
@@ -92,6 +95,3 @@ There is now an officially maintained list for Kubernetes Security vulnerabiliti
 | [CVE-2019-13139](https://nvd.nist.gov/vuln/detail/CVE-2019-13139) | 8.4 | Manipulation of the build path for the "docker build" command could allow for command execution | < 18.09.4 | 18.09.4 |  |
 | [CVE-2018-15664](https://nvd.nist.gov/vuln/detail/CVE-2018-15664) | 7.5 | docker cp race condition   |  < 18.06.1-ce-rc2 | 18.06.1-ce-rc2  | [Capsule8 blog post](https://capsule8.com/blog/race-conditions-cloudy-with-a-chance-of-r-w-access/) |
 | [CVE-2017-14992](https://nvd.nist.gov/vuln/detail/CVE-2017-14992) | 6.5 | Dos via gzip bomb   | < 17.09.1 | 17.09.1 |  |
-
-
-|  |  |  |  |  |  |

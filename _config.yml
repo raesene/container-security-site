@@ -3,7 +3,7 @@ plugins:
   - jekyll-feed
 title: [container-security site]
 description: [A site about container security]
-logo: "images/newlogo.png"
+logo: "images/logo-cathode.png"
 ga_tracking: G-CRQ9HG0N7J
 aux_links:
   "Edit on GitHub":
@@ -14,6 +14,7 @@ aux_links:
 #   terminal   — phosphor green on near-black, IBM Plex Mono, CRT scanlines
 #   threat     — SOC dashboard dark navy + electric cyan, Orbitron headers
 #   classified — parchment/cream document aesthetic, Playfair Display, red accents
+#   cathode    — Katagami phosphor console: near-black CRT, IBM Plex Mono, hairlines
 #
 # To switch: change the value below and rebuild the site
-color_scheme: threat 
+color_scheme: cathode

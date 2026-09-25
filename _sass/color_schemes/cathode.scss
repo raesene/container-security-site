@@ -1,0 +1,522 @@
+// ═══════════════════════════════════════════════════════
+//  CATHODE — Phosphor console (Katagami design language)
+//  https://katagami.ai/language/en-019ef93a-e850-7bd2-8af0-2ce6caf5f775
+//  Aesthetic: near-black CRT ground, IBM Plex Mono throughout,
+//  hairline borders, square corners, three highlighter accents
+// ═══════════════════════════════════════════════════════
+
+$color-scheme: dark;
+
+// ─── Cathode tokens ─────────────────────────────────────
+$cathode-bg:        #0a0a0a;
+$cathode-surface:   #141414;
+$cathode-inset:     #0e0e0e;
+$cathode-text:      #e8e8e8;
+$cathode-muted:     #8a8a8a;
+$cathode-border:    #262626;
+$cathode-phosphor:  #33ff66;
+$cathode-on-accent: #06210f;
+$cathode-cyan:      #7dd7f0;
+$cathode-amber:     #ffb000;
+$cathode-red:       #ff5f56;
+$cathode-glow:      0 0 24px -6px rgba(51, 255, 102, 0.45);
+$cathode-glow-cyan: 0 0 18px -6px rgba(125, 215, 240, 0.45);
+$cathode-motion:    150ms linear;
+
+// ─── just-the-docs variables ────────────────────────────
+$body-background-color:       $cathode-bg;
+$sidebar-color:               $cathode-bg;
+$search-background-color:     $cathode-inset;
+$search-result-preview-color: $cathode-muted;
+$table-background-color:      $cathode-bg;
+$code-background-color:       $cathode-inset;
+$code-linenumber-color:       $cathode-muted;
+$feedback-color:              $cathode-surface;
+$border-color:                $cathode-border;
+$body-text-color:             $cathode-text;
+$body-heading-color:          $cathode-text;
+$nav-child-link-color:        $cathode-muted;
+$link-color:                  $cathode-phosphor;
+$btn-primary-color:           $cathode-phosphor;
+$base-button-color:           $cathode-surface;
+$body-font-family:            "IBM Plex Mono", ui-monospace, monospace;
+$mono-font-family:            "IBM Plex Mono", ui-monospace, monospace;
+
+@import "./vendor/accessible-pygments/github-dark";
+
+// Rules nest under `html body`: the scheme is imported before just-the-docs
+// component styles, so plain selectors would lose on source order.
+html body {
+  // ─── CRT ground: scanline + 64px character-cell grid ────
+  & {
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.01em;
+  }
+
+  &::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+      repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.018) 0 1px, transparent 1px 3px),
+      linear-gradient(rgba(51, 255, 102, 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(51, 255, 102, 0.035) 1px, transparent 1px);
+    background-size: auto, 64px 64px, 64px 64px;
+  }
+
+  .side-bar,
+  .main,
+  .main-header {
+    background-color: transparent !important;
+  }
+
+  ::selection {
+    background: $cathode-phosphor;
+    color: $cathode-on-accent;
+  }
+
+  // ─── Sidebar rail ───────────────────────────────────────
+  .side-bar {
+    border-right: 1px solid $cathode-border;
+  }
+
+  .site-header {
+    border-bottom: 1px solid $cathode-border;
+  }
+
+  .site-title {
+    color: $cathode-text !important;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+
+  .nav-list .nav-list-item .nav-list-link {
+    color: $cathode-muted;
+    font-size: 0.8125rem;
+    border-left: 1px solid transparent;
+    background-image: none !important;
+
+    &:hover {
+      color: $cathode-text;
+      background: $cathode-surface !important;
+    }
+
+    &.active {
+      color: $cathode-phosphor !important;
+      border-left-color: $cathode-phosphor;
+      background: $cathode-surface !important;
+      font-weight: 500;
+
+      &::before {
+        content: "$ ";
+        white-space: pre;
+      }
+    }
+  }
+
+  .nav-list .nav-list-item .nav-list-expander {
+    color: $cathode-muted;
+
+    &:hover {
+      background-image: none !important;
+      background: $cathode-surface !important;
+    }
+  }
+
+  // Child lists: a dashed rail instead of a second box
+  .nav-list .nav-list-item .nav-list {
+    border-left: 1px dashed $cathode-border;
+    margin-left: 1rem;
+  }
+
+  .site-footer {
+    color: $cathode-muted;
+    border-top: 1px solid $cathode-border;
+  }
+
+  // ─── Masthead ───────────────────────────────────────────
+  .main-header {
+    border-bottom: 1px solid $cathode-border !important;
+  }
+
+  .aux-nav-list-item .site-button {
+    color: $cathode-muted;
+    background-image: none !important;
+
+    &:hover {
+      color: $cathode-phosphor;
+      opacity: 1;
+    }
+  }
+
+  // ─── Search ─────────────────────────────────────────────
+  .search-input-wrap {
+    box-shadow: none !important;
+  }
+
+  .search-input {
+    color: $cathode-text !important;
+    border: 1px solid $cathode-border !important;
+    caret-color: $cathode-phosphor;
+
+    &::placeholder {
+      color: $cathode-muted !important;
+    }
+
+    &:focus {
+      border-color: $cathode-cyan !important;
+      box-shadow: $cathode-glow-cyan !important;
+    }
+  }
+
+  .search-results {
+    border: 1px solid $cathode-border;
+    box-shadow: none !important;
+  }
+
+  .search-result:hover,
+  .search-result.active {
+    background: $cathode-surface !important;
+  }
+
+  .search-result-highlight {
+    color: $cathode-phosphor;
+    font-weight: 600;
+  }
+
+  // ─── Headings: prompt-style sigils ──────────────────────
+  .main-content {
+    h1, h2, h3, h4, h5, h6 {
+      font-family: $body-font-family;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: none;
+      color: $cathode-text;
+    }
+
+    h1 {
+      letter-spacing: 0;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid $cathode-border;
+
+      &::before {
+        content: "> ";
+        color: $cathode-phosphor;
+      }
+    }
+
+    h2 {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px dashed $cathode-border;
+
+      &::before {
+        content: "// ";
+        color: $cathode-phosphor;
+      }
+    }
+
+    h3::before {
+      content: "$ ";
+      color: $cathode-muted;
+    }
+
+    h4 {
+      color: $cathode-muted;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    // A heading straight after the page title needs no divider
+    h1 + h2 {
+      border-top: 0;
+      padding-top: 0;
+    }
+  }
+
+  // ─── Links: phosphor highlighter, cyan focus ────────────
+  .main-content a:not(.anchor-heading):not(.btn) {
+    color: $cathode-phosphor;
+    text-decoration: underline;
+    text-decoration-color: rgba(51, 255, 102, 0.35);
+    text-underline-offset: 0.2em;
+    background-image: none;
+
+    &:hover {
+      text-decoration-color: $cathode-phosphor;
+    }
+  }
+
+  a,
+  .nav-list-link,
+  .site-button {
+    transition: color $cathode-motion, background-color $cathode-motion, border-color $cathode-motion;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  .btn:focus-visible,
+  input:focus-visible {
+    outline: 1px solid $cathode-cyan;
+    outline-offset: 2px;
+    box-shadow: $cathode-glow-cyan;
+  }
+
+  .main-content .anchor-heading svg {
+    color: $cathode-muted;
+  }
+
+  // ─── Lists ──────────────────────────────────────────────
+  .main-content ul > li::before {
+    color: $cathode-phosphor;
+  }
+
+  .main-content ol > li::before {
+    color: $cathode-muted;
+  }
+
+  // ─── Inline code: inset recess, square ──────────────────
+  .main-content code:not(.highlight code) {
+    color: $cathode-cyan;
+    background: $cathode-inset;
+    border: 1px solid $cathode-border;
+    border-radius: 0;
+  }
+
+  // ─── Code blocks: inset panel with a terminal label ─────
+  div.highlighter-rouge,
+  figure.highlight {
+    border: 1px solid $cathode-border;
+    border-radius: 0;
+    box-shadow: none;
+    background: $cathode-inset;
+
+    &::before {
+      content: "// output";
+      display: block;
+      padding: 0.25rem 0.75rem;
+      color: $cathode-muted;
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-bottom: 1px dashed $cathode-border;
+    }
+  }
+
+  div.language-bash,
+  div.language-shell,
+  div.language-sh,
+  div.language-console {
+    &.highlighter-rouge::before { content: "$ shell"; }
+  }
+
+  div.language-yaml.highlighter-rouge::before { content: "// yaml"; }
+  div.language-json.highlighter-rouge::before { content: "// json"; }
+
+  .main-content {
+    pre.highlight,
+    div.highlighter-rouge div.highlight,
+    figure.highlight pre,
+    .highlight {
+      background: $cathode-inset;
+      border: 0;
+      border-radius: 0;
+    }
+
+    // Size the block itself, so its line boxes match the code text
+    pre.highlight {
+      font-size: 0.8125rem;
+      line-height: 1.55;
+
+      code {
+        font-size: 1em;
+        line-height: inherit;
+      }
+    }
+  }
+
+  .code-copy-button {
+    color: $cathode-muted;
+
+    &:hover {
+      color: $cathode-phosphor;
+    }
+  }
+
+  // Phosphor syntax palette, layered over github-dark
+  .highlight {
+    color: $cathode-text;
+
+    .c, .c1, .cm, .cs, .cp, .ch, .cpf { color: $cathode-muted; font-style: italic; }
+    .k, .kd, .kn, .kp, .kr, .kt, .kc, .ow { color: $cathode-phosphor; }
+    .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr, .ss, .dl { color: $cathode-amber; }
+    .m, .mi, .mf, .mh, .mo, .mb, .il { color: $cathode-cyan; }
+    .nb, .bp, .nf, .fm { color: $cathode-cyan; }
+    .na, .nt, .py { color: $cathode-phosphor; }
+    .nv, .vi, .vg, .vc, .nx, .n, .nn, .nc, .no { color: $cathode-text; }
+    .o, .p, .w { color: $cathode-text; }
+    .err, .gr, .gt { color: $cathode-red; }
+    .gi { color: $cathode-phosphor; }
+    .gd { color: $cathode-red; }
+    .gh, .gu { color: $cathode-cyan; font-weight: 600; }
+    .gp { color: $cathode-muted; }
+  }
+
+  // ─── Tables: hairline grid, dashed row dividers ─────────
+  .table-wrapper {
+    border: 1px solid $cathode-border;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .main-content table {
+    border: 0;
+    font-variant-numeric: tabular-nums;
+
+    th {
+      background: $cathode-surface;
+      color: $cathode-muted;
+      font-weight: 500;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-bottom: 1px solid $cathode-border;
+    }
+
+    th,
+    td {
+      border-color: $cathode-border;
+    }
+
+    td {
+      background: $cathode-bg;
+      border-bottom: 1px dashed $cathode-border;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    tr:hover td {
+      background: $cathode-surface;
+    }
+  }
+
+  // ─── Blockquotes: recessed, cyan info rail ──────────────
+  .main-content blockquote {
+    margin-left: 0;
+    padding: 0.75rem 1rem;
+    background: $cathode-inset;
+    border-left: 1px solid $cathode-cyan;
+    color: $cathode-text;
+  }
+
+  // ─── Home page hero: wireframe plate, left wash ─────────
+  .main-content .hero {
+    position: relative;
+    margin: 1.5rem 0 2rem;
+    border: 1px solid $cathode-border;
+    background: $cathode-bg;
+    overflow: hidden;
+
+    .hero-image {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      max-height: 26rem;
+      object-fit: cover;
+      object-position: right center;
+    }
+
+    // The language's one sanctioned wash: keeps the caption legible
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(90deg, rgba(10, 10, 10, 0.92) 0%, rgba(10, 10, 10, 0.75) 40%, transparent 68%);
+    }
+
+    .hero-text {
+      position: absolute;
+      z-index: 1;
+      left: 1.5rem;
+      bottom: 1.5rem;
+      max-width: 34ch;
+    }
+
+    .hero-label {
+      margin: 0 0 0.5rem;
+      color: $cathode-phosphor;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hero-tagline {
+      margin: 0;
+      color: $cathode-text;
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 50rem) {
+      .hero-image {
+        aspect-ratio: 4 / 3;
+      }
+
+      .hero-text {
+        left: 1rem;
+        bottom: 1rem;
+      }
+
+      .hero-tagline {
+        font-size: 0.9375rem;
+      }
+    }
+  }
+
+  // ─── Horizontal rules ───────────────────────────────────
+  .main-content hr {
+    height: 0;
+    background: none;
+    border-top: 1px dashed $cathode-border;
+  }
+
+  // ─── Buttons: one phosphor primary, flat and square ─────
+  .btn {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background-image: none !important;
+    border: 1px solid $cathode-border;
+  }
+
+  .btn-primary {
+    color: $cathode-on-accent !important;
+    background: $cathode-phosphor !important;
+    border-color: $cathode-phosphor;
+
+    &:hover {
+      box-shadow: $cathode-glow !important;
+    }
+  }
+}
+
+// ─── Scrollbar ──────────────────────────────────────────
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: $cathode-bg; }
+::-webkit-scrollbar-thumb { background: $cathode-border; }
+::-webkit-scrollbar-thumb:hover { background: $cathode-muted; }
+
+// ─── Motion: nothing moves without consent ──────────────
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
