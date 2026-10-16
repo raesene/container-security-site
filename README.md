@@ -48,6 +48,7 @@ Resources for pentesters/redteamers and people looking to get more information a
 Content that relates to container security but doesn't neatly fit in to attacker/defender buckets
 
 - [Node/Proxy Rights in Kubernetes](security_research/node_proxy.md)
+- [securityContext Under Sandboxed Container Runtimes](security_research/sandboxed_runtimes_securitycontext.md) - How Kubernetes securityContext settings behave under Kata Containers (QEMU and Firecracker) and gVisor, compared with runc
 
 
 
